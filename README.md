@@ -1,1 +1,1 @@
-# Practicas-Gravimetría
+# Prácticas-Gravimetría
