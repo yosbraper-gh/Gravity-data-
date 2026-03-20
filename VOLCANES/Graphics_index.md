@@ -12,9 +12,13 @@ This document links screenshots to their respective original papers for the data
 
   * **Description:** Map of Bouguer gravity anomalies. The thick lines point out the coast of the island and the rim of the caldera. The white areas
 correspond to gaps of data. Contour interval at 4 mGal.
+* **Paper:** *Internal structure of Tenerife (Canary Islands) based on gravity,
+aeromagnetic and volcanological data*
+* **PDF location:** *`Canarias/Tenerife/2000_Aranaetal_Tenerife_GravMag_1.pdf`
 
-2 **Screenshot:**
-![El Hierro Anomaly](path/to/your/hierro_screenshot.png)
+ **Screenshot:**
+<br>
+<img src="Canarias/Tenerife/Mapas/Anomalias/Mapa_tnf_2.png" alt="Bouguer anomaly" width="25%" />
 
   * **Description:** Regional Bouguer anomaly map.
   * **Paper:** *Gravity structure of El Hierro (2012)*
