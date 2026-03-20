@@ -96,15 +96,53 @@ meters, is shown on top right. The triangle corresponds to Pico Mountain summit.
   * **Description:** Horizontal cross sections for the local model of the westernmost sector of Pico Island. Depth of the sections (−300, −600, −1000, …), in
 meters, is shown on top left. The triangle corresponds to Pico Mountain summit.
 
+
+* **Paper:** *Gravity anomalies and crustal signature of volcano-tectonic
+structures of Pico Island (Azores)*
+  * **PDF Location:** `Azores/Faial/2006_PicoIsland_Azores.pdf`
+ 
+  
 #### Island: Sao Miguel
 
 10 **Screenshot:**
 <br>
-<img src="Azores/Pico/Anomalias/Pico-Foto-6.png" alt="Horizontal cross sections" width="50%" />
+<img src="Azores/Sao Miguel/Anomalias/Sao-Foto-4.png" alt="Bouguer anomaly" width="50%" />
 
-  * **Description:** Horizontal cross sections for the local model of the westernmost sector of Pico Island. Depth of the sections (−300, −600, −1000, …), in
-meters, is shown on top left. The triangle corresponds to Pico Mountain summit.
+  * **Description:** Map of refined Bouguer anomalies deduced from observation data. Contour interval of 5mGal. Axis coordinates on Universal Transverse Mercator Projection system (m). The contours os the island and several lakes are added in this figure.
+
+11 **Screenshot:**
+<br>
+<img src="Azores/Sao Miguel/Anomalias/Sao-Foto-5.png" alt="Bouguer anomaly" width="50%" />
+
+  * **Description:** Least squares prediction model of the refined Boueger anomaly field. This model represents the optimal liner interpolation, filtering the observational noise. Contour interval of 5mGal.
+
+12 **Screenshot:**
+<br>
+<img src="Azores/Sao Miguel/Anomalias/Sao-Foto-6.png" alt="Bouguer anomaly" width="50%" />
+
+  * **Description:** Least squares prediction model of the refined Boueger anomaly field for the Furnas area. A higherresolution view. Contour interval of 2mGal.
+
+13 **Screenshot:**
+<br>
+<img src="Azores/Sao Miguel/Anomalias/Sao-Foto-7.png" alt="Anomaly prediction error." width="50%" />
+
+  * **Description:** Map of the anomaly predicition error. Contour interval of 0.1mGal. A dependence of stations distribution is observed on the error map.
+
+14 **Screenshot:**
+<br>
+<img src="Azores/Sao Miguel/Anomalias/Sao-Foto-8.png" alt="Model of anomalous density contrast" width="50%" />
+
+  * **Description:** Adjusted model of anomalous density contrast of Sao Miguel Island obtained from the gravimetric inversion. Horizontal sections: (a) z = -1000 m, (b) z = -4000 m, (c) z = -8000 m, (d) z = -20000 m. Vertical W-E profiles (indicated in Plate 1 d): (e) Y = 4188000, (f) Y = 4184000, (g) Y = 4,180,000, (h) Y = 4,175,000. Contour interval of 30 kg/m^3. 
+
+15 **Screenshot:**
+<br>
+<img src="Azores/Sao Miguel/Anomalias/Sao-Foto-9.png" alt="Anomaly prediction error." width="50%" />
+
+  * **Description:** Adjusted model of anomalous density contrast of the Furnas area obtained from the local gravimetric inversion. Horizontal sections: (a) z = -500 m, (b) z = -1500 m, (c) z = -2500 m, (d) z = -4000 m. Vertical W-E profiles (indicated in Plate 2 d): (e) Y = 4184000, (f) Y = 4,180,000. Contour interval of 50 kg/m^3.
 
 
+* **Paper:** *A three-dimensional gravity inversion applied to Sao Miguel Island (Azores)*
+  * **PDF Location:** `Azores/Faial/1997_SaoMiguelIsland_Azores.pdf`
 
+#### Island: Terceira
 ---
