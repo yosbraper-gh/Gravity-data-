@@ -180,7 +180,79 @@ separation between stations that produces a lack of information at that level. U
 * **Paper:** *A 3-D gravity model for a volcanic crater in Terceira Island (Azores)*
   * **PDF Location:** `Azores/Terceira/2003_TerceiraIsland_Azores.pdf`
  
-### The entire archipelago
+#### The entire archipelago
+
+20 **Screenshot:**
+<br>
+<img src="Azores/Anomalias/Azores-1-Foto-2.png" alt="Gravity profile." width="25%" />
+
+  * **Description:** Comparison between a shipboard gravity profile (solid line) and a coincidentally located satellite-derived gravity (dashed).
+
+21 **Screenshot:**
+<br>
+<img src="Azores/Anomalias/Azores-1-Foto-3.png" alt="Free-air gravity anomaly." width="25%" />
+
+  * **Description:** Free-air gravity anomaly map (contour interval is 10 mGal. The zero level is arbitrary and corresponds to the mean value of the grid.
+
+22 **Screenshot:**
+<br>
+<img src="Azores/Anomalias/Azores-1-Foto-4.png" alt="Mantle Bouguer anomaly." width="25%" />
+
+  * **Description:** Mantle Bouguer anomaly map contoured every 10 mGal. The zero level is arbitrary and corresponds to the mean value of the grid.
+
+23 **Screenshot:**
+<br>
+<img src="Azores/Anomalias/Azores-1-Foto-5.png" alt="Gravity anomaly." width="25%" />
+
+  * **Description:** Predicted gravity anomaly due to lithospheric cooling and thickening with age away from both the MAR and the Terceira Axis.
+The background depicts the magnetic anomaly of Luis (1996) represented with an equalised grey scale. Lighter tones correspond to positive
+anomalies and darker tones to negative anomalies. The closed symbols locate the magnetic anomaly picks (isochrons).
+
+24 **Screenshot:**
+<br>
+<img src="Azores/Anomalias/Azores-1-Foto-6.png" alt="Residual MBA." width="25%" />
+
+  * **Description:** Residual MBA (contour interval is 10 mGal). This residual anomaly is obtained by subtracting the MBA of Figure 5 from the
+gravity effect of the crustal thickness variation displayed in Figure 6. The zero level is arbitrary.
+
+25 **Screenshot:**
+<br>
+<img src="Azores/Anomalias/Azores-1-Foto-7.png" alt="Residual MBA." width="25%" />
+
+  * **Description:** Residual anomaly for the elastic plate model (contour interval is 10 mGal). This residual anomaly is obtained by subtracting the observed free-air anomaly from the theoretical
+anomaly of the elastic plate model (Te D 7 km; d D 12 km; c D 2700 kg m􀀀3; m D 3300 kg m􀀀3). The zero level is arbitrary.
+
+* **Paper:** *Constraints on the structure of the Azores spreading center from gravity
+data*
+  * **PDF Location:** `Azores/1999_GravityAzores.pdf`
 
 
+ 26 **Screenshot:**
+<br>
+<img src="Azores/Anomalias/Azores-2-Foto-3.png" alt="Gravity field model." width="25%" />
+
+  * **Description:** Gravity field model in the North-Atlantic between Iberia and Azores archipelago resulting from the assimilation of marine gravity data into
+satellite derived gravity by optimal interpolation. GPS/levelling sites are presented as triangles.
+
+27 **Screenshot:**
+<br>
+<img src="Azores/Anomalias/Azores-2-Foto-4.png" alt="Different gravity data types." width="25%" />
+
+  * **Description:**Comparison of different gravity data types in a shipborne profile (T1) starting in Terceira island running to south-west.
+
+28 **Screenshot:**
+<br>
+<img src="Azores/Anomalias/Azores-2-Foto-5.png" alt="Gravity anomaly." width="25%" />
+
+  * **Description:** Short segment of most precise shipborne track (T1).
+
+29 **Screenshot:**
+<br>
+<img src="Azores/Anomalias/Azores-2-Foto-6.png" alt="Gravity anomaly." width="25%" />
+
+  * **Description:** Short segment of less precise ship-borne track (T2). Shipborne data (Ship), background model (satellite), derived model (OI), least squares prediction model (LSP) and drape model (DRAPE) along these tracks are superimposed.
+Units mGal and km.
+
+* **Paper:** *Iberia-Azores Gravity Model (IAGRM) using multi-source gravity data*
+  * **PDF Location:** `Azores/azores_estudio_gravitatorio_2005.pdf`
 ---
