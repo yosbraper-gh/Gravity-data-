@@ -256,3 +256,11 @@ Units mGal and km.
 * **Paper:** *Iberia-Azores Gravity Model (IAGRM) using multi-source gravity data*
   * **PDF Location:** `Azores/azores_estudio_gravitatorio_2005.pdf`
 ---
+
+### Archipelago : Cape Verde
+
+
+
+
+
+---
