@@ -99,7 +99,7 @@ meters, is shown on top left. The triangle corresponds to Pico Mountain summit.
 
 * **Paper:** *Gravity anomalies and crustal signature of volcano-tectonic
 structures of Pico Island (Azores)*
-  * **PDF Location:** `Azores/Faial/2006_PicoIsland_Azores.pdf`
+  * **PDF Location:** `Azores/Pico/2006_PicoIsland_Azores.pdf`
  
   
 #### Island: Sao Miguel
@@ -142,7 +142,41 @@ structures of Pico Island (Azores)*
 
 
 * **Paper:** *A three-dimensional gravity inversion applied to Sao Miguel Island (Azores)*
-  * **PDF Location:** `Azores/Faial/1997_SaoMiguelIsland_Azores.pdf`
+  * **PDF Location:** `Azores/Sao Miguel/1997_SaoMiguelIsland_Azores.pdf`
 
 #### Island: Terceira
+
+16 **Screenshot:**
+<br>
+<img src="Azores/Terceira/Anomalias/Terceira-Foto-4.png" alt="Location of the gravimetric observation sites." width="50%" />
+
+  * **Description:** Adjusted model of anomalous density contrast of the Furnas area obtained from the local gravimetric inversion. Horizontal sections: (a) z = -500 m, (b) z = -1500 m, (c) z = -2500 m, (d) z = -4000 m. Vertical W-E profiles (indicated in Plate 2 d): (e) Y = 4184000, (f) Y = 4,180,000. Contour interval of 50 kg/m^3.
+
+17 **Screenshot:**
+<br>
+<img src="Azores/Terceira/Anomalias/Terceira-Foto-6.png" alt="Bouguer anomaly." width="50%" />
+
+  * **Description:** Bouguer anomalies map corresponding to a terrain density value of 2480 kgm−3. Triangles point out scoria cones eruptive centres (see Table 1
+and Figs 4 and 7). UTM coordinates are in metres.
+
+18 **Screenshot:**
+<br>
+<img src="Azores/Terceira/Anomalias/Terceira-Foto-7.png" alt="Deep horizontal section." width="50%" />
+
+  * **Description:** Deep horizontal sections of the density contrast 3-D regional model (for −100, −200 and −500 m) for the whole studied area. The broken line
+indicates the crater rim and the solid line points out the coastline. The section for −200 m includes a general interpretation about the major volcanic and tectonic
+lineaments deduced for the area. In this section, triangles point out scoria cones eruptive centres and solid thick lines proposed lineaments. For reference
+numbers and letters see the text and also Table 1. UTM coordinates are in metres.
+
+19 **Screenshot:**
+<br>
+<img src="Azores/Terceira/Anomalias/Terceira-Foto-8.png" alt="Horizontal section." width="50%" />
+
+  * **Description:** Horizontal section of the density contrasts 3-D local model (for 100, 60 and 0 m a.s.l.) and E–W profiles along the lines shown in the z = 0 m
+horizontal section crossing the locations of the three stations with seismic records. In the section z = 100 m and in the vertical profiles the location of these
+seismic stations is indicated. Inside crater, red lines points out the main routes in the urban centre of S˜ao Sebasti˜ao. The white areas are the effect of a greater
+separation between stations that produces a lack of information at that level. UTM coordinates are in metres.
+
+* **Paper:** *A 3-D gravity model for a volcanic crater in Terceira Island (Azores)*
+  * **PDF Location:** `Azores/Terceira/2003_TerceiraIsland_Azores.pdf`
 ---
