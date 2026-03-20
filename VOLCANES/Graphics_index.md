@@ -72,7 +72,132 @@ inversion: New results for Timanfaya and implications*
    * **Paper:** *Modelling of crustal anomalies of Lanzarote (Canary Islands) in
 light of gravity data*
   * **PDF Location:** `Canarias/Lanzarote/Modelling of crustal anomalies of Lanzarote (Canary Islands)_1.pdf`
+ 
+  #### Island: La Gomera
 
+   **Screenshot:**
+<br>
+<img src="Canarias/La_Gomera/Mapas/Anomalias/Mapa_la_gomera_1.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Map of the Bouguer gravimetric anomalies and distribution of gravity stations. The value used for the density of terrain correction is 2560 kg m−3. The contour interval is 5 mGal. The UTM coordinates are given in metres. The dotted rectangle points out the zone used in the inversion process
+   * **Paper:** *Subsurface geometry and structural evolution of La Gomera island
+based on gravity data*
+  * **PDF Location:** `Canarias/La_Gomera/2011_LaGomera_1.pdf`
+ 
+
+  **Screenshot:**
+<br>
+<img src="Canarias/La_Gomera/Mapas/Anomalias/Mapa_la_gomera_2.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Bouguer gravity anomaly of La Gomera published
+by Montesinos et al. (2011), which was based on land and marine gravity data (dots indicate the measurement
+points).
+   * **Paper:** *Three‐Dimensional Magnetic Models of La Gomera
+(Canary Islands): Insights Into the Early
+Evolution of an Ocean Island Volcano*
+  * **PDF Location:** `Canarias/La_Gomera/2020_LaGomera_compressed_2.pdf`
+  
+ #### Island: Gran Canaria
+
+**Screenshot:**
+<br>
+<img src="Canarias/Gran_Canaria/Mapas/Anomalias/Mapas_gran_canaria_1.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Map of Bouguer anomaly of Gran Canaria. The main gravity high values are identified by white numbers (I to V) and the gravity lows by black numbers
+(VI to VIII). Other features are indicated: margin of Tejeda Caldera (white dots circled area), emission centers in the Neocanaria area (black triangles), rift zone (red
+dotted line).
+   * **Paper:** *Imaging the Volcanic Structures Beneath Gran Canaria Island
+Using New Gravity Data*
+  * **PDF Location:** `Canarias/Gran_Canaria/2022_GranCanaria_1.pdf`
+ 
+#### Island: Fuerteventura
+
+**Screenshot:**
+<br>
+<img src="Canarias/Fuerteventura/Mapas/Anomalias/Mapa_ftv_1.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Map of
+Bouguer gravimetric anomaly
+in Fuerteventura and Lanzarote
+calculated with a density of
+terrain correction of 2,500 kg/
+m3. The contour interval is
+20 mGal. UTM coordinates in
+metres.
+   * **Paper:** *Using a genetic algorithm for 3-D inversion of gravity data
+in Fuerteventura (Canary Islands)*
+  * **PDF Location:** `Canarias/Fuerteventura/2005_Fuerteventura_1.pdf`
+ 
+#### Island: El Hierro
+
+**Screenshot:**
+<br>
+<img src="Canarias/El_Hierro/Mapas/Anomalias/Mapa_el_hierro_1.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Distribution of gravity stations and Bouguer gravity anomaly
+map. The value used for the density of terrain correction is 2510 kg
+m3. Contour interval is 5 mGal. The dotted rectangle shows the
+zone used in the inversion process. Maps are referenced to UTM
+coordinates.
+
+**Screenshot:**
+<br>
+<img src="Canarias/El_Hierro/Mapas/Anomalias/Mapa_el_hierro_otros_1.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Geographic location of El Hierro island at the northwestern edge of the Canarian archipelago.
+
+   * **Paper:** *The crustal structure of El Hierro (Canary Islands) from
+3-D gravity inversion*
+  * **PDF Location:** `Canarias/El_Hierro/2006_ElHierro_1.pdf`
+ 
+**Screenshot:**
+<br>
+<img src="Canarias/El_Hierro/Mapas/Anomalias/Mapa_el_hierro_otros_2.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Aeromagnetic anomaly map of El Hierro. Two main anomalies can be easily identified: an intense normal dipole over the island and a much weaker
+reverse dipole in the marine area to the northeast of the island.
+
+   * **Paper:** *Magnetic imaging of the feeding system of oceanic volcanic islands:
+El Hierro (Canary Islands)*
+  * **PDF Location:** `Canarias/El_Hierro/2011_ElHierro_Mag_2.pdf`
+ 
+ **Screenshot:**
+<br>
+<img src="Canarias/El_Hierro/Mapas/Anomalias/Mapa_el_hierro_3.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Complete Bouguer anomaly map for the onshore part of El Hierro Island. It showsmaximumdifferences of about 50mGal in the gravity anomaly. It is clearly visible as the highest
+anomaly values are related to the giant landslides of El Golfo, El Julan, and Las Playas.
+
+   
+ **Screenshot:**
+<br>
+<img src="Canarias/El_Hierro/Mapas/Anomalias/Mapas_el_hierro_otros_3.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Shaded relief of El Hierro Island indicating its main morphological features (embayments of El Golfo, El Julan, and Las Playas, the volcanic rift systems are shown as blue dashed
+lines). Locations of Quaternary eruptions, Mtña. Chamuscada, Tanganasoga and 2011–2012 submarine eruption, are highlighted as blue-white circles
+
+ **Screenshot:**
+<br>
+<img src="Canarias/El_Hierro/Mapas/Anomalias/Mapas_el_hierro_otros_3.2.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Bouguer anomalymap, it is showed the comparison of the anomalies with the distribution
+of cones and fissures identified at surface (Becerril et al., 2015), andwith the seismicity epicenters previous to the 2011 eruption bellowthe onshore part of the island (Domínguez Cerdeña
+et al., 2014).
+
+ **Screenshot:**
+<br>
+<img src="Canarias/El_Hierro/Mapas/Anomalias/Mapas_el_hierro_otros_3.3.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Horizontal sections of the density model every 1000mobtained through the genetic inversion procedure from4000mb.s.l. An additional section at 500ma.s.l. has been included in
+order to display the shallower part of themodel. Yellow dashed lines point out zones or alignments of structures where high densities are outstanding
+
+
+   * **Paper:** *Structural interpretation of El Hierro (Canary Islands) rifts system from
+gravity inversion modelling*
+  * **PDF Location:** `Canarias/El_Hierro/Interpretation of tidal gravity anomalies in Lanzarote, Canary Islands.pdf`
+ 
+
+ 
 
 
 
