@@ -26,7 +26,7 @@ This document links screenshots to their respective original papers for the data
 
 1 **Screenshot:**
 <br>
-<img src="Azores/Faial/Anomalías/Faial-Foto-4.png" alt="Bouguer anomaly" width="50%" />
+<img src="Azores/Faial/Anomalías/Faial-Foto-4.png" alt="Bouguer anomaly" width="25%" />
 
   * **Description:** Bouguer anomaly in Faial (terrain density 2390 kg m–3) supplemented with data from Pico.
  
