@@ -31,6 +31,21 @@ aeromagnetic and volcanological data*
 of Tenerife, Canary Islands*
   * **PDF Location:** `Canarias/Tenerife/2000_TenerifeGravity_2.pdf`
 
+ **Screenshot:**
+<br>
+<img src="Canarias/Tenerife/Mapas/Anomalias/mapas_tnf_3.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Local anomaly map for onshore Tenerife, after removing
+a regional component from the Bouguer anomaly
+map. The maximum differences in the gravity anomaly are
+around 60 mGa
+  * **Paper:** *Gravimetric study of the shallow basaltic plumbing system of Tenerife,
+Canary Islands*
+  * **PDF Location:** `Canarias/Tenerife/2019_Tenerife_PEPI_3.pdf`
+
+
+
+
 ---
 ### Archipelago : Azores Islands
 #### Island: Faial
