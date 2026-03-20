@@ -18,11 +18,18 @@ aeromagnetic and volcanological data*
 
  **Screenshot:**
 <br>
-<img src="Canarias/Tenerife/Mapas/Anomalias/Mapa_tnf_2.png" alt="Bouguer anomaly" width="25%" />
+<img src="Canarias/Tenerife/Mapas/Anomalias/mapa_tnf_2.png" alt="Bouguer anomaly" width="25%" />
 
-  * **Description:** Regional Bouguer anomaly map.
-  * **Paper:** *Gravity structure of El Hierro (2012)*
-  * **PDF Location:** `volcanes/canarias/estudio_hierro_2012.pdf`
+  * **Description:** Bouguer anomaly map of Tenerife. Shaded circles indicate gravity stations. Contour interval is 50 gu
+ <br>
+<img src="Canarias/Tenerife/Mapas/Anomalias/mapa_tnf_2.2.png" alt="Bouguer anomaly" width="25%" />
+  
+  
+  
+  * **Description:** Bouguer anomaly map for the central part of Tenerife. Contour interval is 50 gu
+  * **Paper:** *Gravity constraints on the structure and volcanic evolution
+of Tenerife, Canary Islands*
+  * **PDF Location:** `Canarias/Tenerife/2000_TenerifeGravity_2.pdf`
 
 ---
 ### Archipelago : Azores Islands
