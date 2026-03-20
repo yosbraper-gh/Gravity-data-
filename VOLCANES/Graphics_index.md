@@ -43,6 +43,36 @@ around 60 mGa
 Canary Islands*
   * **PDF Location:** `Canarias/Tenerife/2019_Tenerife_PEPI_3.pdf`
 
+#### Island: Lanzarote
+
+**Screenshot:**
+<br>
+<img src="Canarias/Lanzarote/Mapas/Anomalias/Mapa_lanzarote_1.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Map of the Bouguer anomaly observed for the island of Lanzarote (including terrain correction for a density value 2300 kg/m3). Contour interval 5mGa
+
+**Screenshot:**
+<br>
+<img src="Canarias/Lanzarote/Mapas/Anomalias/Mapa_lanzarote_1.2.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Zoomfor the area of
+Timanfaya depicted in panel (a). Contour interval 1 mGal. Dots indicate the location of the gravity measurements.
+
+   * **Paper:** *Deep volcanic morphology below Lanzarote, Canaries, from gravity
+inversion: New results for Timanfaya and implications*
+  * **PDF Location:** `Canarias/Lanzarote/2019_Lanzarote_1.pdf`
+ 
+  
+ **Screenshot:**
+<br>
+<img src="Canarias/Lanzarote/Mapas/Anomalias/Mapa_lanzarote_2.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Distribution of gravity stations and map of the Bouguer gravimetric anomaly. The value used for the density of terrain correction is
+2480 kg mx3. Contour interval are 5 mgal. UTM coordinates in metres.
+   * **Paper:** *Modelling of crustal anomalies of Lanzarote (Canary Islands) in
+light of gravity data*
+  * **PDF Location:** `Canarias/Lanzarote/Modelling of crustal anomalies of Lanzarote (Canary Islands)_1.pdf`
+
 
 
 
