@@ -142,7 +142,7 @@ coordinates.
 
 **Screenshot:**
 <br>
-<img src="Canarias/El_Hierro/Mapas/Anomalias/Mapa_el_hierro_otros_1.png" alt="Bouguer anomaly" width="25%" />
+<img src="Canarias/El_Hierro/Mapas/Otros_mapas/Mapas_el_hierro_otros_1.png" alt="Bouguer anomaly" width="25%" />
 
 * **Description:** Geographic location of El Hierro island at the northwestern edge of the Canarian archipelago.
 
@@ -152,7 +152,7 @@ coordinates.
  
 **Screenshot:**
 <br>
-<img src="Canarias/El_Hierro/Mapas/Anomalias/Mapa_el_hierro_otros_2.png" alt="Bouguer anomaly" width="25%" />
+<img src="Canarias/El_Hierro/Mapas/Otros_mapas/Mapas_el_hierro_otros_2.png" alt="Bouguer anomaly" width="25%" />
 
 * **Description:** Aeromagnetic anomaly map of El Hierro. Two main anomalies can be easily identified: an intense normal dipole over the island and a much weaker
 reverse dipole in the marine area to the northeast of the island.
@@ -171,14 +171,14 @@ anomaly values are related to the giant landslides of El Golfo, El Julan, and La
    
  **Screenshot:**
 <br>
-<img src="Canarias/El_Hierro/Mapas/Anomalias/Mapas_el_hierro_otros_3.png" alt="Bouguer anomaly" width="25%" />
+<img src="Canarias/El_Hierro/Mapas/Otros_mapas/Mapas_el_hierro_otros_3.png" alt="Bouguer anomaly" width="25%" />
 
 * **Description:** Shaded relief of El Hierro Island indicating its main morphological features (embayments of El Golfo, El Julan, and Las Playas, the volcanic rift systems are shown as blue dashed
 lines). Locations of Quaternary eruptions, Mtña. Chamuscada, Tanganasoga and 2011–2012 submarine eruption, are highlighted as blue-white circles
 
  **Screenshot:**
 <br>
-<img src="Canarias/El_Hierro/Mapas/Anomalias/Mapas_el_hierro_otros_3.2.png" alt="Bouguer anomaly" width="25%" />
+<img src="Canarias/El_Hierro/Mapas/Otros_mapas/Mapas_el_hierro_otros_3.2.png" alt="Bouguer anomaly" width="25%" />
 
 * **Description:** Bouguer anomalymap, it is showed the comparison of the anomalies with the distribution
 of cones and fissures identified at surface (Becerril et al., 2015), andwith the seismicity epicenters previous to the 2011 eruption bellowthe onshore part of the island (Domínguez Cerdeña
@@ -186,7 +186,7 @@ et al., 2014).
 
  **Screenshot:**
 <br>
-<img src="Canarias/El_Hierro/Mapas/Anomalias/Mapas_el_hierro_otros_3.3.png" alt="Bouguer anomaly" width="25%" />
+<img src="Canarias/El_Hierro/Mapas/Otros_mapas/Mapas_el_hierro_otros_3.3.png" alt="Bouguer anomaly" width="25%" />
 
 * **Description:** Horizontal sections of the density model every 1000mobtained through the genetic inversion procedure from4000mb.s.l. An additional section at 500ma.s.l. has been included in
 order to display the shallower part of themodel. Yellow dashed lines point out zones or alignments of structures where high densities are outstanding
