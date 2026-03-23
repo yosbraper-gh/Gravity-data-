@@ -524,7 +524,7 @@ Units mGal and km.
   * **PDF Location:** `Cape Verde/2012_MaioIsland_CapeVerde.pdf`
 ---
 
-### Archipelago : Cape Verde
+### Archipelago : Galapagos
 
 1 **Screenshot:**
 <br>
@@ -571,13 +571,131 @@ calculated from standard thermal model (red lines). Misfits are emphasized by re
   * **PDF Location:** `Galapagos/2023_GravityAnomalies_Galapagos.pdf`
 
 
+---
+
+### Archipelado: Reunion
+
+1 **Screenshot:**
+<br>
+<img src="Reunion/Anomalias/Reunion-1-Foto-3.png" alt="Bouger anomaly." width="25%" />
+
+  * **Description:** Bouguer anomaly maps of Re´union Island computed with all available data. The density corrections are 2.5=103 kgrm3 A., 2.7=103 kgrm3 B., 2.9=103 kgrm3 C. and 3.1=103 kgrm3 D.. Contour interval is 2.5 mGal.
+
+
+2 **Screenshot:**
+<br>
+<img src="Reunion/Anomalias/Reunion-1-Foto-4.png" alt="Distribution of bouger anomaly." width="25%" />
+
+  * **Description:** Interpretative scheme of the distribution of Bouguer anomalies on Re´union Island, on a topographic base map of the island contour interval: 250 m.. Labels refer to dense structures described in the text. Their boundaries are based on visual interpretation of the Bouguer
+anomaly maps and on results from 2.5D models presented in the next figures the six cross-sections are located on the map.. Eastern boundaries of body C dashed lines. are based on results from previous detailed gravity surveys conducted in the area see text.. Available gravity data are represented as crosses.
+
+3 **Screenshot:**
+<br>
+<img src="Reunion/Anomalias/Reunion-1-Foto-5.png" alt="Model bouger anomaly." width="25%" />
+
+  * **Description:** 2.5D models on SW–NE profiles 1, 2 and 3 shown in Fig. 4. on the western side of the island. The observed curve gravity field obtained for a correction density of 2.7=103 kgrm3. is drawn only in areas where data have been acquired. Density contrasts are in 103 kgrm3 and errors on calculated gravity field are rms errors.
+
+4 **Screenshot:**
+<br>
+<img src="Reunion/Anomalias/Reunion-1-Foto-6.png" alt="Model bouger anomaly." width="25%" />
+
+  * **Description:** 2.5D models on profiles 4 and 5 shown in Fig. 4. on the
+eastern side of the island. The observed curve gravity field obtained for a correction density of 2.7=103 kgrm3. is drawn only in areas where data have been acquired. Density contrasts are
+in 103 kgrm3 and errors on calculated gravity field are rms errors. Eastern boundaries of body C are drawn as dashed lines as they are based on results from previous detailed gravity surveys (see text).
+
+5 **Screenshot:**
+<br>
+<img src="Reunion/Anomalias/Reunion-1-Foto-7.png" alt="Model bouger anomaly." width="25%" />
+
+  * **Description:** 2.5D model on the NW–SE profile 6 shown in Fig. 4. The observed curve gravity field obtained for a correction density of 2.7=103 kgrm3. is drawn only in areas where data have been acquired. Density contrasts are in 103 kgrm3 and errors on calculated gravity field are rms errors. Eastern boundaries of body C are drawn as dashed lines as they are based on results from previous detailed gravity surveys see text..
+
+6 **Screenshot:**
+<br>
+<img src="Reunion/Anomalias/Reunion-1-Foto-7.png" alt="Theorical model." width="25%" />
+
+  * **Description:** Theoretical model showing the relation between the anomaly pattern and the variable height of gravity stations when a density contrast exists at shallow depth.
+
+* **Paper:** *Structure of Re´union Island Indian Ocean/ inferred from the
+interpretation of gravity anomalies*
+  * **PDF Location:** `Reunion/1999_ReunionIsland.pdf`
+
+7 **Screenshot:**
+<br>
+<img src="Reunion/Anomalias/Reunion-2-Foto-3.png" alt="Gravity anomaly." width="25%" />
+
+  * **Description:** (a) Bouguer anomaly map computed for a density correction of 2.2×103 kg m−3; (b) regional anomaly obtained with a 1 km upward continuation; (c) residual gravity map
+obtained by subtracting the regional anomaly from the observed one; this residual anomaly is built to extract the short-wavelength signal. Coordinates in kilometers (WGS84,UTM40S). (For interpretation of the references to color in this figure legend, the reader is referred to the web version of this article.)
+
+8 **Screenshot:**
+<br>
+<img src="Reunion/Anomalias/Reunion-2-Foto-6.png" alt="Model gravity anomaly." width="25%" />
+
+  * **Description:** 2D 1/2 and 2D 3/4 models (profiles are located in Fig. 4) of the short-wavelength anomalies from the residual gravity field (Fig. 3c): (a) profile 1 in Fond de la Rivière de l'Est (FRE) area. The 2D 3/4 structure is limited to a distance of 2 km southward and 5 km northward; (b) profile 2 in Plaine des Sables (PS) area .The 2D 1/2 structure is limited to a
+distance of 4 km perpendicular to the profile in both directions; (c) profile 3 in Central Cone (CC) and Enclos Fouqué (EF) areas. The 2D 1/2 structure is limited to a distance of 2 km
+perpendicularly to the profile direction for Central Cone (CC) and of 5 km for Enclos Fouqué (EF); (d) profile 4 in the offshore NE rift zone (NE) area. The 2D 3/4 structure is limited to
+a distance of 7 km south-eastward and 3 km north-westward from the profile direction. Densities are in 103 kg m−3. The observed gravity curve is calculated for a correction density
+of 2.2×103 kg m−3, error bars are shown.
+
+9 **Screenshot:**
+<br>
+<img src="Reunion/Anomalias/Reunion-2-Foto-10.png" alt="Gravity anomaly." width="25%" />
+
+  * **Description:** Comparison of pre- and post-April 2007 gravity anomalies along profiles: (a) Plaine des Sables area; (b) Central Cone area.
+
+10 **Screenshot:**
+<br>
+<img src="Reunion/Anomalias/Reunion-2-Foto-11.png" alt="Theorical model Gravity anomaly." width="25%" />
+
+  * **Description:** Conceptual models explaining the free air anomaly decrease after the summit collapse. (a) WE profiles across 3D models (7650.25 km in latitude); the 3D models are
+computed on a flat plane at 2620 m asl. They show the individual and combined contributions of the different structures considered in the text. Coordinates in meters (WGS84,UTM40S). Errors bars are rms errors calculated for the free air anomaly difference. (b) to (c): possible sources for the observed density decrease.
+
+
+* **Paper:** *Gravity structure of Piton de la Fournaise volcano and inferred mass transfer during
+the 2007 crisis*
+  * **PDF Location:** `Reunion/2009_Gailleretal_Piton_JVGR.pdf`
+
+11 **Screenshot:**
+<br>
+<img src="Reunion/Anomalias/Reunion-3-Foto-4.png" alt="Bouger anomaly." width="25%" />
+
+  * **Description:** Bouger anomaly map for d = 2.7gcm^-3. Contour interval is 2 mGal. GB = Grand Brulé anomaly; SZ = summit zone anomalt; PS = Plaine des Sables anomaly; EF = Enclos Fouqué anomaly.
+
+12 **Screenshot:**
+<br>
+<img src="Reunion/Anomalias/Reunion-3-Foto-5.png" alt="Bouger anomaly." width="25%" />
+
+  * **Description:** Bouger anomalies computed with d = 2.5 and d = 2.7 gcm^-3 and topography profiles. Vertical dashed lines indicate the zone without data. Bouger and topographic corrections have opposed signs and their combinations depend on density and elevation values. This explains that for elevations near sea level the Bouger anomaly computed with d = 2.5 gcm^-3 becomes lower than the onde computed with d = 2.7 gcm^-3.
+
+
+13 **Screenshot:**
+<br>
+<img src="Reunion/Anomalias/Reunion-3-Foto-6.png" alt="Bouger anomaly." width="25%" />
+
+  * **Description:** Bouger anomaly map, d = 2.7gcm^-3, of the summit zone. Countour interval 1mGal.
+
+14 **Screenshot:**
+<br>
+<img src="Reunion/Anomalias/Reunion-3-Foto-7.png" alt="Bouger anomaly." width="25%" />
+
+  * **Description:** BB' topographic (lower part of the figure) and Bouger anomaly (upper part) profiles across the summit zone. Solid line = Bouger anomaly; dashed line= extrapolation of the effect of the Gran Brule and Plaine des Sables heavy zones.
+
+15 **Screenshot:**
+<br>
+<img src="Reunion/Anomalias/Reunion-3-Foto-8.png" alt="Residual anomaly." width="25%" />
+
+  * **Description:** Residual anomaly of the summit zone and relations with active structures. Open circles = gravity stations; shaded area = emissive cone; dotted line = emissive fissure. Countour interval 1 mGal.
+
+16 **Screenshot:**
+<br>
+<img src="Reunion/Anomalias/Reunion-3-Foto-9.png" alt="Model three dimensional." width="25%" />
+
+  * **Description:** Direct three dimensional study of the summit zone. The computed model is shown on three sections. a) Bouger anomaly profile (d = 2.7 gcm^-3). Dashed line = regional anomaly used; solid line = smoothed Bouger anomaly; dots = actuales nearest values. b) Computed anomaly (dots) and residual anomaly (dashed line). c) Cross sections through three dimensional model for a homogeneous density of 0.gcm^-3.
 
 
 
 
-
-
-
+* **Paper:** *Complete study of Piton de la Fournaise volcano, Reunion Islan *
+  * **PDF Location:** `Reunion/Complete_gravity_study_of_Piton_de_la_Fo.pdf`
 
 
 ---
