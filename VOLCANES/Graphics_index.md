@@ -201,7 +201,7 @@ gravity inversion modelling*
 
  **Screenshot:**
 <br>
-<img src="Canarias/Mapas_Canarias_globales/Mapas/Anomalias/Mapa_canarias_1_aire_libre.png" alt="Bouguer anomaly" width="25%" />
+<img src="Canarias/Mapas_Canarias_globales/Anomalias/Mapa_canarias_1_aire_libre.png" alt="Bouguer anomaly" width="25%" />
 
 * **Description:** Canary Island free air anomalies 
 
@@ -212,14 +212,14 @@ gravity inversion modelling*
 
   **Screenshot:**
 <br>
-<img src="Canarias/Mapas_Canarias_globales/Mapas/Anomalias/Mapas_canarias_2_aire_libre.png" alt="Bouguer anomaly" width="25%" />
+<img src="Canarias/Mapas_Canarias_globales/Anomalias/Mapas_canarias_2_aire_libre.png" alt="Bouguer anomaly" width="25%" />
 
 * **Description:** Free-air gravity anomaly map which has been shaded at 50mGal intervals.
 
 
   **Screenshot:**
 <br>
-<img src="Canarias/Mapas_Canarias_globales/Mapas/Anomalias/Mapa_canarias_2.2_aire_libre.png" alt="Bouguer anomaly" width="25%" />
+<img src="Canarias/Mapas_Canarias_globales/Anomalias/Mapa_canarias_2.2_aire_libre.png" alt="Bouguer anomaly" width="25%" />
 
 * **Description:** Comparison of observed and calculated gravity anomalies
 in the Canary Islands region. The contour interval is 25 mGal.
@@ -232,7 +232,7 @@ in the vicinity of the Canary Islands*
 **Screenshot:**
 
 <br>
-<img src="Canarias/Mapas_Canarias_globales/Mapas/Anomalias/Mapa_canarias_3_aire_libre.png" alt="Bouguer anomaly" width="25%" />
+<img src="Canarias/Mapas_Canarias_globales/Anomalias/Mapa_canarias_3_aire_libre.png" alt="Bouguer anomaly" width="25%" />
 
 * **Description:** Free air anomaly map (contour interval = 10 mGal).
 
@@ -241,7 +241,7 @@ in the vicinity of the Canary Islands*
 **Screenshot:**
 
 <br>
-<img src="Canarias/Mapas_Canarias_globales/Mapas/Anomalias/Mapa_canarias_3.2_Bouguer.png" alt="Bouguer anomaly" width="25%" />
+<img src="Canarias/Mapas_Canarias_globales/Anomalias/Mapa_canarias_3.2_Bouguer.png" alt="Bouguer anomaly" width="25%" />
 
 * **Description:** Bouguer anomaly map (contour interval = 5 mGal, except to the east
 of Fuerteventura and Lanzarote where the contour interval = 10 mGal). The colour palette range has been emphasized for anomalies between
@@ -252,7 +252,7 @@ of Fuerteventura and Lanzarote where the contour interval = 10 mGal). The colour
 **Screenshot:**
 
 <br>
-<img src="Canarias/Mapas_Canarias_globales/Mapas/Anomalias/Mapa_canarias_3.3.png" alt="Bouguer anomaly" width="25%" />
+<img src="Canarias/Mapas_Canarias_globales/Anomalias/Mapa_canarias_3.3.png" alt="Bouguer anomaly" width="25%" />
 
 * **Description:**Interpreted Bouguer anomaly map (contour interval = 5 mGal, except to the east of Fuerteventura and Lanzarote where the contour
 interval = 10 mGal). Black solid lines show linear high gravity gradients.
@@ -502,6 +502,150 @@ Units mGal and km.
 
 ### Archipelago : Cape Verde
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+### Hawaii islands
+
+**Screenshot:**
+<br>
+<img src="Hawaii/Mapas/Anomalias/Mapa_Hawaii_1.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Bouguer anomaly map of a section of the Hawaiian Ridge; P=2.3 gl ee. Contour int ervals are at 10 mgal.
+
+
+**Screenshot:**
+<br>
+<img src="Hawaii/Mapas/Anomalias/Mapa_Hawaii_1.2.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Free air anomaly (dash ed lin es ) gravity map of the Hawaiian Islands (values in mill igals) . Bathymetry
+contours ( solid lines) in fathoms.
+
+* **Paper:** *An Analysis of the Gravity Field Over the Hawaiian Islands
+in Terms of Crustal Structure*
+* **PDF Location:** `Hawaii/1965_Hawai_Islands_1.pdf`
+
+**Screenshot:**
+<br>
+<img src="Hawaii/Mapas/Otros_mapas/Mapa_Hawaii_2.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:**Map of study area showing contoured residual gravity field
+over island of Hawai‘i. Contour interval is 10 mGal. Island is shaded
+
+* **Paper:** *Deep magmatic structures of Hawaiian volcanoes, imaged by
+three-dimensional gravity models*
+* **PDF Location:** `Hawaii/2000_BigIslandHawaii_2.pdf`
+
+
+**Screenshot:**
+<br>
+<img src="Hawaii/Mapas/Mapas/Mapa_Hawaii_3.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:**Free‐air anomaly (FAA) map of Kaua’i, Ni’ihau, and the surrounding submarine area.
+
+**Screenshot:**
+<br>
+<img src="Hawaii/Mapas/Mapas/Mapa_Hawaii_3.2.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:*Complete Bouguer anomaly map of Kaua’i, Ni’ihau, and the surrounding submarine area.
+
+
+**Screenshot:**
+<br>
+<img src="Hawaii/Mapas/Mapas/Mapa_Hawaii_3.3.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Residual gravity anomaly map of Kaua’i, Ni’ihau, and the surrounding submarine area. The
+red box marks the region used in the inversion.
+
+
+**Screenshot:**
+<br>
+<img src="Hawaii/Mapas/Mapas/Mapa_Hawaii_3.4.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Detailed residual gravity anomaly map (color overlay) using rb = 2700 kg/m3, ra = 2400 kg/m3, and Te = 35 km,
+draped over gray shaded digital elevation, illuminated from the northeast.
+
+* **Paper:** *Gravity anomalies of the Northern Hawaiian Islands:
+Implications on the shield evolutions of Kauai and Niihau*
+* **PDF Location:** `Hawaii/2010_NorthernHawaiianIslands_3.pdf`
+
+**Screenshot:**
+<br>
+<img src="Hawaii/Mapas/Otros_mapas/Mapa_Hawaii_Oros_mapas_4.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Geologic map of Kīlauea’s summit caldera with visible eruptive fissures represented as black
+lines and buried fissures shown in gray.
+
+**Screenshot:**
+<br>
+<img src="Hawaii/Mapas/Mapas/Mapa_Hawaii_4.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:**Bouguer gravity anomaly map corrected for terrain, earth tides, and normalized to the base
+station. Black dots are the measurement locations.
+
+**Screenshot:**
+<br>
+<img src="Hawaii/Mapas/Mapas/Mapa_Hawaii_4.2.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:**Residual Bouguer gravity anomaly map where the regional field
+from part B has been removed.
+
+* **Paper:** *The shallow structure of Kīlauea caldera from high-resolution
+Bouguer gravity and total magnetic anomaly mapping:
+Insights into progressive magma reservoir growth*
+* **PDF Location:** `Hawaii/2013_KilaueaVolcano_4.pdf`
+
+
+**Screenshot:**
+<br>
+<img src="Hawaii/Mapas/Otros_mapas/Mapa_Hawaii_Otros-mapas_5.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Map view of dense bodies in Fig. 6 , with seismicity and orientation of vertical cross-section in (b). The cross-section intersects isosurfaces that define the summit density structure above the dense 3220 kg m −3 bodies shown here, and these form the trough that is flanked by strike-slip seismicity in (b).
+
+**Screenshot:**
+<br>
+<img src="Hawaii/Mapas/Otros_mapas/Mapa_Hawaii_Otros-mapas_5.2.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Vertical cross-section through seismic tomo graphy deri ved density structure that intersects the summit 3-D body and seismicity of C shown in Fig. 6 . Seismicity outside this plane are projected horizontally onto it.
+
+
+
+**Screenshot:**
+<br>
+<img src="Hawaii/Mapas/Mapas/Mapa_Hawaii_5.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:**The distribution of the residual gravity disturbance in which the calculated values used the seismic tomography of Lin et al. ( 2014 ) to construct the 3-D domain of Denlinger & Flinders ( 2022 ).
+
+* **Paper:** *Density structure of K ¯ılauea volcano: implications for magma storage and transport*
+* **PDF Location:** `Hawaii/2024_BigIslandHawaii_5.pdf`
+
+
+**Screenshot:**
+<br>
+<img src="Hawaii/Mapas/Mapas/Mapa_Hawaii_6.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:**Bouguer gravity anomaly map of the island of Oahu, Hawaii.
+
+* **Paper:** *Gravity Survey of the Island of Oahu, Hawaii*
+* **PDF Location:** `Hawaii/oahu_HAwaii_6.pdf`
 
 
 
