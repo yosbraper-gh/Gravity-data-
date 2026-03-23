@@ -557,20 +557,20 @@ three-dimensional gravity models*
 
 **Screenshot:**
 <br>
-<img src="Hawaii/Mapas/Mapas/Mapa_Hawaii_3.png" alt="Bouguer anomaly" width="25%" />
+<img src="Hawaii/Mapas/Mapa_Hawaii_3.png" alt="Bouguer anomaly" width="25%" />
 
 * **Description:**Free‐air anomaly (FAA) map of Kaua’i, Ni’ihau, and the surrounding submarine area.
 
 **Screenshot:**
 <br>
-<img src="Hawaii/Mapas/Mapas/Mapa_Hawaii_3.2.png" alt="Bouguer anomaly" width="25%" />
+<img src="Hawaii/Mapas/Mapa_Hawaii_3.2.png" alt="Bouguer anomaly" width="25%" />
 
 * **Description:*Complete Bouguer anomaly map of Kaua’i, Ni’ihau, and the surrounding submarine area.
 
 
 **Screenshot:**
 <br>
-<img src="Hawaii/Mapas/Mapas/Mapa_Hawaii_3.3.png" alt="Bouguer anomaly" width="25%" />
+<img src="Hawaii/Mapas/Mapa_Hawaii_3.3.png" alt="Bouguer anomaly" width="25%" />
 
 * **Description:** Residual gravity anomaly map of Kaua’i, Ni’ihau, and the surrounding submarine area. The
 red box marks the region used in the inversion.
@@ -578,7 +578,7 @@ red box marks the region used in the inversion.
 
 **Screenshot:**
 <br>
-<img src="Hawaii/Mapas/Mapas/Mapa_Hawaii_3.4.png" alt="Bouguer anomaly" width="25%" />
+<img src="Hawaii/Mapas/Mapa_Hawaii_3.4.png" alt="Bouguer anomaly" width="25%" />
 
 * **Description:** Detailed residual gravity anomaly map (color overlay) using rb = 2700 kg/m3, ra = 2400 kg/m3, and Te = 35 km,
 draped over gray shaded digital elevation, illuminated from the northeast.
@@ -596,14 +596,14 @@ lines and buried fissures shown in gray.
 
 **Screenshot:**
 <br>
-<img src="Hawaii/Mapas/Mapas/Mapa_Hawaii_4.png" alt="Bouguer anomaly" width="25%" />
+<img src="Hawaii/Mapas/Mapa_Hawaii_4.png" alt="Bouguer anomaly" width="25%" />
 
 * **Description:**Bouguer gravity anomaly map corrected for terrain, earth tides, and normalized to the base
 station. Black dots are the measurement locations.
 
 **Screenshot:**
 <br>
-<img src="Hawaii/Mapas/Mapas/Mapa_Hawaii_4.2.png" alt="Bouguer anomaly" width="25%" />
+<img src="Hawaii/Mapas/Mapa_Hawaii_4.2.png" alt="Bouguer anomaly" width="25%" />
 
 * **Description:**Residual Bouguer gravity anomaly map where the regional field
 from part B has been removed.
@@ -630,7 +630,7 @@ Insights into progressive magma reservoir growth*
 
 **Screenshot:**
 <br>
-<img src="Hawaii/Mapas/Mapas/Mapa_Hawaii_5.png" alt="Bouguer anomaly" width="25%" />
+<img src="Hawaii/Mapas/Mapa_Hawaii_5.png" alt="Bouguer anomaly" width="25%" />
 
 * **Description:**The distribution of the residual gravity disturbance in which the calculated values used the seismic tomography of Lin et al. ( 2014 ) to construct the 3-D domain of Denlinger & Flinders ( 2022 ).
 
@@ -640,7 +640,7 @@ Insights into progressive magma reservoir growth*
 
 **Screenshot:**
 <br>
-<img src="Hawaii/Mapas/Mapas/Mapa_Hawaii_6.png" alt="Bouguer anomaly" width="25%" />
+<img src="Hawaii/Mapas/Mapa_Hawaii_6.png" alt="Bouguer anomaly" width="25%" />
 
 * **Description:**Bouguer gravity anomaly map of the island of Oahu, Hawaii.
 
