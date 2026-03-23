@@ -616,7 +616,7 @@ Insights into progressive magma reservoir growth*
 
 **Screenshot:**
 <br>
-<img src="Hawaii/Mapas/Otros_mapas/Mapa_Hawaii_Otros-mapas_5.png" alt="Bouguer anomaly" width="25%" />
+<img src="Hawaii/Mapas/Otros_mapas/Mapa_Hawaii_Otros_mapas_5.png" alt="Bouguer anomaly" width="25%" />
 
 * **Description:** Map view of dense bodies in Fig. 6 , with seismicity and orientation of vertical cross-section in (b). The cross-section intersects isosurfaces that define the summit density structure above the dense 3220 kg m −3 bodies shown here, and these form the trough that is flanked by strike-slip seismicity in (b).
 
