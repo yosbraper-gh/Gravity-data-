@@ -502,15 +502,73 @@ Units mGal and km.
 
 ### Archipelago : Cape Verde
 
+1 **Screenshot:**
+<br>
+<img src="Cape Verde/Anomalias/Cape-Foto-3.png" alt="Bouger anomaly." width="25%" />
+
+  * **Description:** From satellite data collected from Andersen et al. (2010). The black circle indicates the data used for crustal density determination (80 km radius from the island of Maio).
+
+2 **Screenshot:**
+<br>
+<img src="Cape Verde/Anomalias/Cape-Foto-4.png" alt="Bouger anomaly." width="25%" />
+
+  * **Description:** From the land survey data. The dots represent the location of the gravity stations.
+
+3 **Screenshot:**
+<br>
+<img src="Cape Verde/Anomalias/Cape-Foto-5.png" alt="Gravity response." width="25%" />
+
+  * **Description:** Gravity response calculated from the determined density model.
+
+* **Paper:** *Constraints on the structure of Maio Island (Cape Verde) by a three-dimensional gravity model: imaging partially exhumed magma chambers*
+  * **PDF Location:** `Cape Verde/2012_MaioIsland_CapeVerde.pdf`
+---
+
+### Archipelago : Cape Verde
+
+1 **Screenshot:**
+<br>
+<img src="Galapagos/Anomalias/Gala-1-Foto-2.png" alt="Gravity data." width="25%" />
+
+  * **Description:** Gravity data from the surveys performed as part of this study were used to calculate the Bouguer anomaly (BA) for (a) Santa Cruz and (b) San Cristóbal. For each island, (c) the (top) measured gravity, (middle) free air anomaly (FAA), and (bottom) Bouguer anomaly (BA) are shown. Note that color differences in Gravity axis labels correspond to the appropriate colors of the data symbols (Santa Cruz, gray and left axis; San Cristóbal, black and right axis).
 
 
+* **Paper:** *Dynamic Magma Storage at Near‐Ridge Hot Spots: Evidence From New Galápagos Gravity Data*
+  * **PDF Location:** `Galapagos/2020_Galapagos_1.pdf`
+
+2 **Screenshot:**
+<br>
+<img src="Galapagos/Anomalias/Gala-2-Foto-1.png" alt="Free air anomaly." width="25%" />
+
+  * **Description:** Free air anomaly (mGal)
+
+3 **Screenshot:**
+<br>
+<img src="Galapagos/Anomalias/Gala-2-Foto-1-2.png" alt="Mantle bouguer anomaly." width="25%" />
+
+  * **Description:** Mantle bouguer anomaly (mGal)
+
+4 **Screenshot:**
+<br>
+<img src="Galapagos/Anomalias/Gala-2-Foto-2.png" alt="Residual bouguer anomaly." width="25%" />
+
+  * **Description:** (a) Map of residual mantle Bouguer anomaly (RMBA) with a contour interval of 10 mGal; labeling as in Figure 1. The CNSC-generated crust within the Galapagos gore shows slightly less positive RMBA than the EPR-generated crust outside of the gore, except in the gore tip area (segments s1 to s3). (b) Gravity-derived crustal thickness derived from (a) with a 7.5 km shift to match seismic results from Zonenshain et al. (1980) and Canales et al. (2002). The contour interval
+is 0.5 km. West-east lines A-A’ to C-C’ locate profiles in (c). (c) West-east profiles noted in (b), showing crustal thickness across the EPR and along the CNSC. The tip area includes segments s1 to s3 (CG), where EPR crust is being rifted; the CNSC is spreading between the Cocos and Nazca plates. Gray bar shows the west-to-east crustal thickening trend along the CNSC. Note that the eastern flank of the EPR-generated crust follows a similar west-to-east crustal thickening trend (blue and red lines).
+
+5 **Screenshot:**
+<br>
+<img src="Galapagos/Anomalias/Gala-2-Foto-3.png" alt="Axis profile." width="25%" />
+
+  * **Description:** Cross-axis profiles of the CGSC and CNSC within the Galapagos gore, labeled by longitude and segment number.
+Profile locations are in Figure 1c; lines are at intervals of 0.3° longitude. (a) MBA (blue line) and standard thermal model (red
+line). Misfits between MBA and standard thermal model are filled with red and green. Light blue lines marks gore scarps. (b)
+RMBA calculated from standard thermal model. Green fill (elevated RMBA) implies thinner crust and red fill implies thicker
+crust. Arrow line locates seismic refraction line Gala-1 (Canales et al., 2002). (c) Bathymetry (blue lines) and subsidence
+calculated from standard thermal model (red lines). Misfits are emphasized by red and green fill.
 
 
-
-
-
-
-
+* **Paper:** *Gravity Anomalies and Implications for Shallow Mantle Processes of the Western Cocos-Nazca Spreading Center*
+  * **PDF Location:** `Galapagos/2023_GravityAnomalies_Galapagos.pdf`
 
 
 
