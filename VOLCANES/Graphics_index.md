@@ -197,9 +197,70 @@ gravity inversion modelling*
   * **PDF Location:** `Canarias/El_Hierro/Interpretation of tidal gravity anomalies in Lanzarote, Canary Islands.pdf`
  
 
+ #### Canary islands in general
+
+ **Screenshot:**
+<br>
+<img src="Canarias/Mapas_Canarias_globales/Mapas/Anomalias/Mapa_canarias_1_aire_libre.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Canary Island free air anomalies 
+
+
+   * **Paper:** *Map showing free-air gravity anomalies around the Canary islands, Spain*
+  * **PDF Location:** `Canarias/1990_CanaryIslands_FreeAirAnomaly_plate-1.pdf`
+
+
+  **Screenshot:**
+<br>
+<img src="Canarias/Mapas_Canarias_globales/Mapas/Anomalias/Mapas_canarias_2_aire_libre.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Free-air gravity anomaly map which has been shaded at 50mGal intervals.
+
+
+  **Screenshot:**
+<br>
+<img src="Canarias/Mapas_Canarias_globales/Mapas/Anomalias/Mapa_canarias_2.2_aire_libre.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Comparison of observed and calculated gravity anomalies
+in the Canary Islands region. The contour interval is 25 mGal.
+
+   * **Paper:** *Crustal structure, gravity anomalies and flexure of the
+in the vicinity of the Canary Islands*
+  * **PDF Location:** `Crustal structure,_gravity_anomalies_in_Canary_Islands_2.pdf`
  
 
+**Screenshot:**
 
+<br>
+<img src="Canarias/Mapas_Canarias_globales/Mapas/Anomalias/Mapa_canarias_3_aire_libre.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Free air anomaly map (contour interval = 10 mGal).
+
+
+
+**Screenshot:**
+
+<br>
+<img src="Canarias/Mapas_Canarias_globales/Mapas/Anomalias/Mapa_canarias_3.2_Bouguer.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Bouguer anomaly map (contour interval = 5 mGal, except to the east
+of Fuerteventura and Lanzarote where the contour interval = 10 mGal). The colour palette range has been emphasized for anomalies between
+125–225 mGal.
+
+
+
+**Screenshot:**
+
+<br>
+<img src="Canarias/Mapas_Canarias_globales/Mapas/Anomalias/Mapa_canarias_3.3.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:**Interpreted Bouguer anomaly map (contour interval = 5 mGal, except to the east of Fuerteventura and Lanzarote where the contour
+interval = 10 mGal). Black solid lines show linear high gravity gradients.
+
+* **Paper:** *Gravity analysis offshore the Canary Islands from a systematic survey*
+* **PDF Location:** `Canarias_gravity_3.pdf`
+ 
+ 
 
 ---
 ### Archipelago : Azores Islands
