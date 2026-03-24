@@ -27,6 +27,9 @@ This document contains the list of the volcanic complexes chosen for the study:
 **Maui**
 * Haleakala volcano
 
+**Big island Hawaii**
+* Kilauea
+
 **O'ahu**
 * Ku'olau volcano
 * Wai'nae volcano
