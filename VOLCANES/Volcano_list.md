@@ -9,7 +9,7 @@ This document contains the list of the volcanic complexes chosen for the study:
 | | La Gomera | Yes | | |
 | | El Hierro | Yes | | |
 | | Gran Canaria | Yes | | Yes |
-| | Fuerteventura | Yes | | Yes |
+| | Fuerteventura | Yes | | |
 | | Lanzarote | Yes | | Yes |
 |Azores | Faial | Yes | | |
 | | Pico | Yes | | |
@@ -18,10 +18,14 @@ This document contains the list of the volcanic complexes chosen for the study:
 | Cabo Verde | Maio | | | Yes * |
 | Isla Reunión| Reunión | Yes | | |
 | Hawaii | Big Island | Yes | | |
-| | | | | |
+| | Oahu | Yes | | |
 
 
 * Gravity data (Maio Island) = Respuesta Gravitatoria
+* Gravity data (Tenerife) = Coordinates, orthometric height [m], absolute gravity value [mGal], complete Bouguer anomaly [mGal]
+* Gravity data (La Palma) = Coordinates, height [m], observed gravity [mGal], Bouguer + topography anomaly [mGal]
+* Gravity data (Gran Canaria) = Coordinates, height [m], gravity [mGal], Bouguer gravity anomaly [mGal]
+* Gravity data (Lanzarote) = Coordinates, height [m], gravity [uGal]
 
 
 
