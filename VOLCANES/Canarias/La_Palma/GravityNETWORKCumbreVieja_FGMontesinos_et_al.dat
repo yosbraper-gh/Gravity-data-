@@ -1,0 +1,65 @@
+ GravityNETWORKCumbreVieja_FGMontesinos_et_al.dat
+ 
+ We provide the land gravity values used in this study as supplementary data for peer-review purposes.
+ Data: Gravity changes data observed in the network between July 2021 and January 2022 
+ 
+Insights into the magmatic feeding system of the 2021 eruption at Cumbre Vieja (La Palma, Canary Islands) inferred from gravity data modeling 
+F. G. Montesinos1,7, S. Sainz-Maza2,7, D. Gómez-Ortiz3, J. Arnoso4,7, I. Blanco-Montenegro5,7, M. Benavent1,7 E. Vélez4,7, N. Sánchez6 and T. Martín-Crespo3
+
+
+1 Facultad de CC. Matemáticas, Universidad Complutense de Madrid. Plaza de Ciencias 3, 28040 Madrid, Spain.
+2 Observatorio Geofísico Central (IGN). C/ Alfonso XII, 3. 28014 Madrid, Spain.
+3 Dpt. Biología y Geología, Física y Química Inorgánica, ESCET, Universidad Rey Juan Carlos. C/Tulipán s/n, 28933 Móstoles, Madrid, Spain.
+4 Instituto de Geociencias (IGEO), CSIC-UCM. C/ Doctor Severo Ochoa, 7. 28040 Madrid, Spain.
+5 Departamento de Física, Escuela Politécnica Superior, Universidad de Burgos. Avda. de Cantabria s/n, 09006 Burgos, Spain.
+6 Instituto Geológico y Minero de España (IGME, CSIC), Unidad Territorial de Canarias, Alonso Alvarado, 43, 2A, 35003 Las Palmas de Gran Canaria, Spain.
+7 Research Group ‘Geodesia’, Universidad Complutense de Madrid, Spain.
+
+
+Corresponding author: Fuensanta G. Montesinos (fuensant@ucm.es)
+
+Project PID2019-104726GB-I00 of the Spanish Research Agency and funding for research groups of Complutense University of Madrid
+(Financiación Grupos 2021; UCM 2022-GRFN14/22) have supported this research.
+We also thank the financial support from the Spanish Ministry of Science and Innovation (RD 1078/2021)
+to fund the research activities of the CSIC-PIE project CSIC-LAPALMA-07. 
+
+
+------------------------------------------------------------------------------------------------
+Responsible Researchers: 
+-  José Arnoso Sampedro,  Instituto de Geociencias (CSIC-UCM), Spain
+jose.arnoso@csic.es
+
+- Fuensanta González Montesinos, Facultad de CC. Matemáticas, Universidad Complutense de Madrid. Spain
+fuensant@ucm.es
+
+
+>> The use of this data set is limited to academic or research purposes, and it should be referenced
+
+
+Zone:Cumbre Vieja (La Palma Island, Spain)
+Geodetic Coordinates, Datum WGS84
+Gravity change values (uGal)
+                                       
+Station                                            
+                 Lat      Long      Height    Height change     Gravity change   CORRECTION       Gravity change
+                                  January 22       (January 22-July 21)            (1)    (2)      with corrections
+                 º          º        m           cm            uGal             uGal    uGal           uGal
+PALM_EVIR     28.6629  -17.8414    907.190      -2                 0            -6.5     4.1            -11       
+Futbolpaso    28.6481  -17.8839    610.226      -7                24           -20.4     8.3             -5       
+PALM_ENIC     28.6021  -17.8804    617.437      16               113            48.0    -8.5            170       
+Ermisidro     28.6410  -17.7971    576.740      -8                39           -24.1    -0.2             15       
+Absebel       28.5795  -17.7745    337.116      -5                51           -15.7    -0.7             36       
+Monteluna     28.5435  -17.8114    671.425      -4                68           -11.1     0.3             57       
+PinolaVirgen  28.5095  -17.8261    751.928      -3                63            -8.6     0.4             54       
+PALM_EANT     28.4953  -17.8447    721.739      -5                82           -14.5     0.3             67       
+Busmicharco   28.5349  -17.8659    767.678       2               150             6.8     1.3            155       
+Pistastr1     28.6166  -17.8489   1346.546     -14               266           -43.2    85.2            138       
+Pistastr2     28.6013  -17.8531   1337.794     -16               236           -48.1    73.0            115       
+Busnaos       28.5877  -17.9097     25.250       1                 2             2.2   -31.8             36       
+Losretamales  28.5105  -17.8557    746.965      -2                18            -6.8     0.6             11       
+Canfuego      28.6012  -17.8858    552.848      16                60            48.5    -4.9            113       
+Cintsant      28.4869  -17.8479    633.500      -3                83           -10.2     0.2             73       
+                                             rmse=3 cm                                           rmse=9 uGal
+                                                                             
+         Correction (1): Free air correction 
+                    (2): New topography effect on the gravity data (density= 3000 kg/m3)
