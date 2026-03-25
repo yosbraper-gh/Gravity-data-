@@ -197,6 +197,43 @@ gravity inversion modelling*
   * **PDF Location:** `Canarias/El_Hierro/Interpretation of tidal gravity anomalies in Lanzarote, Canary Islands.pdf`
  
 
+
+
+
+#### Island: La Palma
+ 
+
+
+ **Screenshot:**
+<br>
+<img src="Canarias/La_Palma/Mapas/Otros_mapas/La_Palma_Otros_mapas_1.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Geographical location (latitude and longitude) and geological elements (modified from
+Urgeles et al. [1999] and Carracedo et al. [1999]) of La Palma Island. Some location names are also
+included
+
+
+ **Screenshot:**
+<br>
+<img src="Canarias/La_Palma/Mapas/Anomalias/La_Palma_1.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Refined Bouguer disturbances also including the terrain correction for mean density 2300 kgm3.
+Positions of bench marks are also included. UTM coordinates are used for axes.
+
+**Screenshot:**
+<br>
+<img src="Canarias/La_Palma/Mapas/Anomalias/La_Palma_1.2.png" alt="Bouguer anomaly" width="25%" />
+
+* **Description:** Local gravity obtained from the refined Bouguer disturbances by subtracting the regional
+trend. This gravity disturbances are further employed for the inversion process in order to determine the
+local structure under the island. UTM coordinates are used.
+
+ * **Paper:** *Structural results for La Palma island using 3-D gravity inversion*
+  * **PDF Location:** `Canarias/La_Palma/Journal of Geophysical Research  Solid Earth - 2009 - Camacho - Structural results for La Palma island using 3‐D gravity_1.pdf`
+
+
+
+
  #### Canary islands in general
 
  **Screenshot:**
