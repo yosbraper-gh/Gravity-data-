@@ -27,6 +27,7 @@ This document contains the list of the volcanic complexes chosen for the study:
 * Gravity data (Gran Canaria) = Coordinates, height [m], gravity [mGal], Bouguer gravity anomaly [mGal]
 * Gravity data (Lanzarote) = Coordinates, height [m], gravity [uGal]
 
+a4aa1ac83d703fc6c393578becd27144
 
 
 
