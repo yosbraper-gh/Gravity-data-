@@ -15,10 +15,12 @@ This document contains the list of the volcanic complexes chosen for the study:
 | | Pico | Yes | | |
 | | Sao Miguel | Yes | | |
 | | Terceira | Yes | | |
-| Cabo Verde | Maio | | | Yes * |
+| Cabo Verde | Maio | | Yes | Yes * |
 | Isla Reunión| Reunión | Yes | | |
-| Hawaii | Big Island | Yes | | |
-| | Oahu | Yes | | Yes |
+| Hawaii | Big Island | Yes | | Yes |
+| | Oahu | Yes | |  |
+| | Kauai | Yes | Yes |  |
+| Galápagos |  | Yes | Yes |  |
 
 
 * Gravity data (Maio Island) = Respuesta Gravitatoria
@@ -27,7 +29,8 @@ This document contains the list of the volcanic complexes chosen for the study:
 * Gravity data (Gran Canaria) = Coordinates, height [m], gravity [mGal], Bouguer gravity anomaly [mGal]
 * Gravity data (Lanzarote) = Coordinates, height [m], gravity [uGal]
 
-a4aa1ac83d703fc6c393578becd27144
+* Mapa de anomalía de Aire Libre en la costa marítima de las Islas Canarias.
+* Mapa de anomalía de Aire Libre en la costa marítima de las Islas de Cabo Verde.
 
 
 
