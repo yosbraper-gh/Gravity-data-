@@ -18,7 +18,7 @@ This document contains the list of the volcanic complexes chosen for the study:
 | Cabo Verde | Maio | | | Yes * |
 | Isla Reunión| Reunión | Yes | | |
 | Hawaii | Big Island | Yes | | |
-| | Oahu | Yes | | |
+| | Oahu | Yes | | Yes |
 
 
 * Gravity data (Maio Island) = Respuesta Gravitatoria
