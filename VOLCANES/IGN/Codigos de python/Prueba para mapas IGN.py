@@ -13,8 +13,13 @@ import re
 # ==========================================
 # 1. CARGA DE DATOS Y LIMPIEZA
 # ==========================================
-ruta_csv = r"C:\Users\Usuario\Desktop\IGN\Lineas de Canarias\Tenerife\Tenerife_Datos_Final_Color.csv"
+ruta_csv = r"C:\Users\Usuario\Desktop\IGN\Lineas de Canarias\Tenerife\Tenerife_Base_Datos_Limpia.csv"
 df = pd.read_csv(ruta_csv)
+
+# --- NUEVO: Arreglar las comas y forzar que sean números matemáticos ---
+df['Alt_Ortometrica'] = pd.to_numeric(df['Alt_Ortometrica'].astype(str).str.replace(',', '.'), errors='coerce')
+df['Gravedad_mGal'] = pd.to_numeric(df['Gravedad_mGal'].astype(str).str.replace(',', '.'), errors='coerce')
+# -----------------------------------------------------------------------
 
 # Función para pasar de Grados Minutos Segundos a Decimal
 def gms_a_decimal(gms_str):
@@ -28,11 +33,10 @@ def gms_a_decimal(gms_str):
     except:
         return np.nan
 
-# Aplicamos la conversión
+# Aplicamos la conversión de coordenadas
 df['lat_deg'] = df['Latitud'].apply(gms_a_decimal)
 df['lon_deg'] = df['Longitud'].apply(gms_a_decimal)
 df['lon_deg'] = df['lon_deg'].apply(lambda x: -abs(x) if x > 0 else x) # Forzar Oeste (-)
-
 # ==========================================
 # 2. CÁLCULOS GEOFÍSICOS
 # ==========================================
@@ -94,7 +98,7 @@ def crear_mapa_pygmt(datos, columna, titulo, archivo_salida):
     fig.plot(
         x=datos['lon_deg'], 
         y=datos['lat_deg'], 
-        color=datos[columna], 
+        fill=datos[columna], 
         cmap=True, 
         style="c0.25c", 
         pen="0.5p,black"

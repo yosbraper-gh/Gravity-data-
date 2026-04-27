@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Apr 23 15:18:50 2026
+Created on Fri Apr 24 11:31:45 2026
 
 @author: Usuario
 """
-
-
 
 import pandas as pd
 import numpy as np
@@ -19,7 +17,7 @@ import pygmt
 #                      CARGA Y LIMPIEZA DE DATOS
 # =============================================================================
 
-df = pd.read_csv(r"C:\Users\Usuario\Desktop\IGN\Lineas de Canarias\Tenerife\Tenerife_Base_Datos_Limpia.csv", dtype=str)
+df = pd.read_csv(r"C:\Users\Usuario\Desktop\IGN\Lineas de Canarias\La Gomera\Datos_IGN_La_Gomera.csv", dtype=str)
 
 def dms_to_dd_vector(col):
     col = col.str.replace(',', '.', regex=False)
@@ -57,7 +55,7 @@ print(h)
 #  DEFINICIÓN DE LA REGIÓN
 # =============================================================================
 margin = 0.05
-region = [-17.0, -16.1, 27.9, 28.65]
+region = [-17.45, -17.05, 27.95, 28.25]
 
 
 # =============================================================================
@@ -95,7 +93,7 @@ print('Anomalía de Aire Libre (mGal):', a_g_l)
 # La corrección de Bouguer simple es: C_B = 0.04193 * rho * h
 # La anomalía de Bouguer = Anomalía Aire Libre - C_B
 
-densidad_referencia = 2.400   # g/cm³, densidad estándar de la corteza
+densidad_referencia = 2.560   # g/cm³, densidad estándar de la corteza
 
 c_bouguer = 0.04193 * densidad_referencia * h
 a_bouguer = a_g_l - c_bouguer
@@ -123,7 +121,7 @@ print(f"Se han eliminado {np.sum(~mascara_buenos)} puntos con errores de medici�
 # =============================================================================
 
 # --- Comparación visual para diferentes densidades ---
-densidades = [2.2, 2.4, 2.5, 2.7]
+densidades = [2.3, 2.4, 2.56, 2.7]
 plt.figure(figsize=(10, 6))
 for rho in densidades:
     c_b = 0.04193 * rho * h
@@ -205,7 +203,7 @@ lon_utm, lat_utm = proyeccion(easting_2d, northing_2d, inverse=True)
 elevacion_utm = interpolador((lat_utm, lon_utm))
 
 # 7. Definir densidades
-rho_roca = 2400
+rho_roca = 2560
 rho_agua = 1030
 densidad = np.where(elevacion_utm >= 0, rho_roca, rho_agua - rho_roca)
 
