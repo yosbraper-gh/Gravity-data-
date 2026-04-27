@@ -116,6 +116,7 @@ lon = lon[mascara_buenos]
 lat = lat[mascara_buenos]
 h = h[mascara_buenos]
 g_obs = g_obs[mascara_buenos]
+g_n = g_n[mascara_buenos]
 a_g_l = a_g_l[mascara_buenos]
 a_bouguer = a_bouguer[mascara_buenos]
 
@@ -365,4 +366,4 @@ nombre_archivo = "Resultados_Gravimetria_Tenerife.csv"
 df_final.to_csv(nombre_archivo, index=False, sep=',', encoding='utf-8')
 
 print("--- Exportación completada ---")
-print("Los resultados se han guardado en: Resultados_Gravimetría_Tenerife")
+print("Los resultados se han guardado en: Tabla de Tenerife con igpp")
