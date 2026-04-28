@@ -1,13 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Apr 24 11:36:26 2026
+Created on Tue Apr 28 10:53:49 2026
 
 @author: Usuario
 """
 
-
 """
-                    PROGRAMA ANOMALÍAS GRAN CANARIA IGN
+                    PROGRAMA ANOMALÍAS FUERTEVENTURA IGN
 ###############################################################################
 """
 # -*- coding: utf-8 -*-
@@ -17,13 +16,16 @@ import matplotlib.pyplot as plt
 import boule as bl
 import harmonica as hm
 import pygmt
-
+import pyproj
+from scipy.interpolate import RegularGridInterpolator
+import ensaio
+import xarray as xr
 
 # =============================================================================
 #                      CARGA Y LIMPIEZA DE DATOS
 # =============================================================================
 
-df = pd.read_csv('Datos_IGN_Completos_Filtrados_Gran Canaria - copia.csv', dtype=str)
+df = pd.read_csv('Datos_IGN_Completos_Filtrados_Fuerteventura.csv', dtype=str)
 
 def dms_to_dd_vector(col):
     col = col.str.replace(',', '.', regex=False)
@@ -51,10 +53,10 @@ print(h)
 #  DEFINICIÓN DE LA REGIÓN 
 # =============================================================================
 margin = 0.05
-region = [lon.min()-margin, lon.max()+margin,
-          lat.min()-margin, lat.max()+margin]
+#region = [(lon.min())-margin, (lon.max())+margin,
+          #(lat.min())-margin, (lat.max()) +margin]
 
-
+region = [-14.55, -13.75, 28.00, 28.85]
 # =============================================================================
 #                 GRAVEDAD NORMAL — SUSTITUIDA POR HARMONICA
 # =============================================================================
@@ -90,7 +92,7 @@ print('Anomalía de Aire Libre (mGal):', a_g_l)
 # La corrección de Bouguer simple es: C_B = 0.04193 * rho * h
 # La anomalía de Bouguer = Anomalía Aire Libre - C_B
 
-densidad_referencia = 2.600   # g/cm³, densidad estándar de la corteza
+densidad_referencia = 2.500   # g/cm³, densidad estándar de la corteza
 
 c_bouguer = 0.04193 * densidad_referencia * h
 a_bouguer = a_g_l - c_bouguer
@@ -98,7 +100,7 @@ a_bouguer = a_g_l - c_bouguer
 print('Anomalía de Bouguer Simple (mGal):', a_bouguer)
 
 # --- Comparación visual para diferentes densidades ---
-densidades = [2.2, 2.4, 2.6, 3]
+densidades = [2.2, 2.5, 2.8, 3.1]
 plt.figure(figsize=(10, 6))
 for rho in densidades:
     c_b = 0.04193 * rho * h
@@ -117,7 +119,6 @@ plt.show()
 # =============================================================================
 #           ANOMALÍA DE BOUGUER COMPLETA (CORRECCIÓN TOPOGRÁFICA)
 # =============================================================================
-
 # tiene en cuenta el relieve real: resta el efecto de las montañas que "tiran"
 # del gravímetro hacia arriba y suma el efecto de los valles (huecos de masa) 
 # que están por debajo.
@@ -127,81 +128,64 @@ plt.show()
 # 3. Calcular la atracción gravitatoria de todos esos prismas en cada uno de tus puntos de medida.
 
 
-# =============================================================================
-#   ANOMALÍA DE BOUGUER COMPLETA (CORRECCIÓN TOPOGRÁFICA) 
-# =============================================================================
-import pyproj  # transforma coordenadas entre sistemas de referencia, convertimos 
-#                de (lon/lat en grados) a cartesianas metros
-from scipy.interpolate import RegularGridInterpolator  #para proyectar la topografía
-                                                       # a la nueva malla en metros.
+print("4. Procesando topografía y batimetría con Ensaio (10 arc-min)...")
+# Descarga y carga del modelo global
+archivo_topo = ensaio.fetch_earth_topography(version=1)
+topo_global = xr.load_dataarray(archivo_topo)
 
-# 1. Cargar topografía: descarga del modelo digital de elevación global, igpp
-#topo = pygmt.datasets.load_earth_relief(resolution="15s", region=region)
-# Recomendado para precisión profesional en Lanzarote
-topo = pygmt.datasets.load_earth_relief(resolution="03s", region=region, registration="gridline")
-#(3 segundos de arco ~90m)
+# RECORTAMOS el modelo global a nuestra región para que el PC no colapse
+topo = topo_global.sel(
+    longitude=slice(region[0] - 0.5, region[1] + 0.5),
+    latitude=slice(region[2] - 0.5, region[3] + 0.5)
+)
 
-# 2. Proyección UTM zona 28N (Lanzarote)
+topo_lon = topo.longitude.values
+topo_lat = topo.latitude.values
+topo_z = topo.values  # Alturas (+) y profundidades (-)
+
+# Proyecciones a metros (UTM 28N)
 proyeccion = pyproj.Proj(proj="utm", zone=28, ellps="WGS84")
-
-# 3. Proyectar los puntos de observación: convierte mis coordenadas en grados a metros
 easting_obs, northing_obs = proyeccion(lon, lat)
 
-# 4. Proyectar las esquinas de la región para definir la malla UTM, para empezar a definir 
-# el mallado que vamos a usar.
-
-lon_corners = np.array([topo.lon.values.min(), topo.lon.values.max()])
-lat_corners = np.array([topo.lat.values.min(), topo.lat.values.max()])
+lon_corners = np.array([topo_lon.min(), topo_lon.max()])
+lat_corners = np.array([topo_lat.min(), topo_lat.max()])
 e_corners, n_corners = proyeccion(lon_corners, lat_corners)
 
-# 5. Crear malla regular en UTM con el mismo número de puntos que la topografía
-n_lon = len(topo.lon.values)
-n_lat = len(topo.lat.values)
-
+# Mallado e interpolación
+n_lon = len(topo_lon)
+n_lat = len(topo_lat)
 easting_1d  = np.linspace(e_corners[0], e_corners[1], n_lon)
 northing_1d = np.linspace(n_corners[0], n_corners[1], n_lat)
 
-# 6. Re-interpolar la elevación a la nueva malla UTM regular
-#    Primero creamos el interpolador sobre la malla original lon/lat
 interpolador = RegularGridInterpolator(
-    (topo.lat.values, topo.lon.values),  # ejes originales
-    topo.values,                          # elevación 2D
-    method="linear",
-    bounds_error=False,
-    fill_value=None
+    (topo_lat, topo_lon), topo_z, method="linear", bounds_error=False, fill_value=None
 )
 
-# Crear malla 2D UTM y convertir de vuelta a lon/lat para interpolar
 easting_2d, northing_2d = np.meshgrid(easting_1d, northing_1d)
 lon_utm, lat_utm = proyeccion(easting_2d, northing_2d, inverse=True)
-
-# Interpolar elevación en los puntos de la malla UTM
 elevacion_utm = interpolador((lat_utm, lon_utm))
 
-# 7. Definir densidades
-rho_roca = 2480
-rho_agua = 1030
+# Definimos las densidades de la roca y el agua (kg/m3)
+rho_roca = 2500 ### DEBE SER LA MISMA QUE SE USA EN BOUGUER SIMPLE!!!!!!!!!
+rho_agua = 1030  
 densidad = np.where(elevacion_utm >= 0, rho_roca, rho_agua - rho_roca)
 
-# 8. Crear capa de prismas sobre malla UTM regular
+print("   -> Calculando atracción de los prismas 3D...")
 capa_prismas = hm.prism_layer(
-    coordinates=(easting_1d, northing_1d),  # arrays 1D uniformes en metros
+    coordinates=(easting_1d, northing_1d),
     surface=elevacion_utm,
     reference=0,
     properties={"density": densidad}
 )
 
-# 9. Calcular efecto gravitatorio en los puntos de observación
 efecto_topografico = capa_prismas.prism_layer.gravity(
     coordinates=(easting_obs, northing_obs, h),
     field="g_z"
 )
 
-# 10. Anomalía de Bouguer Completa
 a_bouguer_completa = a_g_l - efecto_topografico
 
-print('Anomalia de Bouguer Completa calculada con exito!')
-print('Min:', a_bouguer_completa.min(), 'Max:', a_bouguer_completa.max())
+
 
 
 
@@ -209,13 +193,28 @@ print('Min:', a_bouguer_completa.min(), 'Max:', a_bouguer_completa.max())
 #                     REPRESENTACIÓN CON PYGMT
 # =============================================================================
 
+
 data = pd.DataFrame({
-    "lon":        lon,
-    "lat":        lat,
+    "lon": lon,
+    "lat": lat,
+    "g_obs": g_obs, 
     "aire_libre": a_g_l,
-    "bouguer":    a_bouguer
+    "bouguer": a_bouguer,
 })
 
+# --- Mapa Gravedad Observada ---
+fig = pygmt.Figure()
+
+fig.basemap(region=region, projection="M15c", frame=["af", "WSen"])
+fig.coast(shorelines="1/0.8p,black", land="lightgray",
+          water="lightblue", resolution="f")
+
+vmin, vmax = g_obs.min(), g_obs.max()
+pygmt.makecpt(cmap="turbo", series=[vmin, vmax])
+
+fig.plot(x=data.lon, y=data.lat, style="c0.5c", fill=data.g_obs, cmap=True)
+fig.colorbar(frame='af+l"Gravedad Observada (mGal)"', position="JBC+w10c+h")
+fig.show()
 # --- Mapa Anomalía Aire Libre ---
 fig = pygmt.Figure()
 
@@ -335,8 +334,8 @@ resultados = {
 df_final = pd.DataFrame(resultados)
 
 # Guardamos el archivo CSV en la misma carpeta donde está tu script
-nombre_archivo = "Resultados_Gravimetria_Gran_Canaria.csv"
+nombre_archivo = "Resultados_Gravimetria_Fuerteventura.csv"
 df_final.to_csv(nombre_archivo, index=False, sep=',', encoding='utf-8')
 
 print(f"--- Exportación completada ---")
-print(f"Los resultados se han guardado en: Resultados_Gravimetría_Lanzarote")
+print(f"Los resultados se han guardado en: Resultados_Gravimetria_Fuerteventura")

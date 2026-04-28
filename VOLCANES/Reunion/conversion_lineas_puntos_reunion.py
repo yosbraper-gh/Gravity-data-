@@ -24,7 +24,7 @@ puntos_generados = []
 # 0.05 grados son aprox 5 km. Ajusta este número según la resolución que quieras.
 
 
-distancia_muestreo = 0.001 #aproximadamente es un punto cada 111 m
+distancia_muestreo = 0.01 #aproximadamente es un punto cada 111 m
 
 # 4. El motor que extrae los puntos
 
@@ -66,6 +66,6 @@ print(f"¡Éxito! De unas pocas líneas se han generado {len(gdf_puntos)} puntos
 df_final = gdf_puntos[['longitude', 'latitude', 'A (mGal)']]
 
 # 2. Exportamos la tabla a un archivo CSV
-df_final.to_csv('Puntos_Reunion_3_Completos_AB.csv', index=False)
+df_final.to_csv('Puntos_Reunion_3_Completos_AB_2_9.csv', index=False)
 
 print("¡Archivo 'Puntos_Reunion_3_Completos_AB.csv' guardado con éxito en tu carpeta!")
