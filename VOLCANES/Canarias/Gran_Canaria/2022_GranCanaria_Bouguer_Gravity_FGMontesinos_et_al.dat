@@ -1,33 +1,3 @@
-
-Imaging the volcanic structures beneath Gran Canaria Island using new gravity data
-
-F. G. Montesinos1,5, J. Arnoso2,5, D. Gómez-Ortiz3, M. Benavent1,5, I. Blanco-Montenegro4,5, E. Vélez2,5,T. Martín-Crespo3, A. V. Gorbatikov6, and M. Y. Stepanova6
-
-1 Facultad de CC. Matemáticas, Universidad Complutense de Madrid. Plaza de Ciencias 3, 28040 Madrid, Spain
-2 Instituto de Geociencias (IGEO), CSIC-UCM. C/ Doctor Severo Ochoa, 7. 28040 Madrid, Spain.
-3 Dpt. Biología y Geología, Física y Química Inorgánica, ESCET, Universidad Rey Juan Carlos. C/Tulipán s/n, 28933 Móstoles, Madrid, Spain.
-4 Departamento de Física, Escuela Politécnica Superior, Universidad de Burgos. Avda. de Cantabria s/n, 09006 Burgos, Spain.
-5 Research Group ‘Geodesia’, Universidad Complutense de Madrid, Spain
-6 Institute of Physics of the Earth, Russian Academy of Sciences. Bolshaya Gruzinskaya 10,123995 Moscow, Russia
-
-Corresponding author: Fuensanta G. Montesinos (fuensant@ucm.es)
-
-Projects CGL2015-63799-P and CGL2011-25494 of the Spanish Research Agency has supported this research. 
-
-------------------------------------------------------------------------------------------------
-Responsible Researchers: 
--  José Arnoso Sampedro,  Instituto de Geociencias (CSIC-UCM), Spain
-jose_arnoso@csic.es
-
-- Fuensanta González Montesinos, Facultad de CC. Matemáticas, Universidad Complutense de Madrid. Spain
-fuensant@ucm.es
-
-
->> The use of this data set is limited to academic or research purposes and it have to be notified to the responsible researchers.
-
-  
-Coordinates: UTM 28N  	    
-Datum WGS84
 X (m)   Y (m)    H (m)  gravity(mGal) Bouguer Gravity anomaly (mGal)
                                       (terrain density  2600 kg/m3)
 457951 3109054     75    979359.87            207.30
