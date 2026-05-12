@@ -8,7 +8,6 @@ Created on Mon Apr 27 11:52:04 2026
 import pandas as pd
 import numpy as np
 import pyproj
-import ensaio
 import xarray as xr
 import harmonica as hm
 import pygmt
@@ -30,7 +29,7 @@ for col in df.columns:
 
 df = df.dropna()
 
-# Extraemos las columnas (asegúrate de que los nombres coincidan con tu CSV)
+# Extraemos las columnas
 lon = df['X'].values
 lat = df['Y'].values
 a_bouguer_simple = df['Bouguer_mG'].values
@@ -40,31 +39,38 @@ region = [-158.35, -157.60, 21.20, 21.75]
 proyeccion = pyproj.Proj(proj="utm", zone=4, ellps="WGS84")
 
 # =============================================================================
-# BLOQUE 2: RECUPERACIÓN DE ALTURAS (ENSAIO)
+# BLOQUE 2: RECUPERACIÓN DE ALTURAS (PyGMT Alta Resolución SRTM15+ / GEBCO)
 # =============================================================================
-print("2. Descargando topografía y rescatando alturas (h)...")
+print("2. Descargando topografía/batimetría de alta resolución (15s)...")
+# Nota: La primera vez que lo ejecutes tardará un poquito porque descarga el archivo HD.
 
-archivo_topo = ensaio.fetch_earth_topography(version=1)
-topo_global = xr.load_dataarray(archivo_topo)
+# Ampliamos la región 0.5 grados para los efectos de borde
+region_extendida = [region[0] - 0.5, region[1] + 0.5, region[2] - 0.5, region[3] + 0.5]
 
-# Recorte del modelo alrededor de Oahu
-topo = topo_global.sel(
-    longitude=slice(region[0] - 0.5, region[1] + 0.5),
-    latitude=slice(region[2] - 0.5, region[3] + 0.5)
+# Descargamos la topografía+batimetría integrada
+topo = pygmt.datasets.load_earth_relief(
+    resolution="15s", 
+    region=region_extendida,
+    registration="pixel"  # <--- CORRECCIÓN
 )
 
-topo_lon, topo_lat, topo_z = topo.longitude.values, topo.latitude.values, topo.values
+# PyGMT usa 'lon' y 'lat' como nombres de dimensiones
+topo_lon = topo['lon'].values
+topo_lat = topo['lat'].values
+topo_z = topo.values
 
-# Interpolador para "adivinar" la altura h de tus puntos digitalizados
+# Interpolador para "adivinar" la altura h de tus puntos digitalizados.
+# ¡Blindado con fill_value=0 por si algún punto cae justo en el borde!
 interpolador_h = RegularGridInterpolator(
-    (topo_lat, topo_lon), topo_z, method="linear", bounds_error=False, fill_value=None
+    (topo_lat, topo_lon), topo_z, method="linear", bounds_error=False, fill_value=0
 )
 h_recuperada = interpolador_h((lat, lon))
 
 # =============================================================================
 # BLOQUE 3: CÁLCULO DE LA CORRECCIÓN TOPOGRÁFICA 3D
 # =============================================================================
-print("3. Calculando prismas 3D (Topografía + Batimetría)...")
+print("3. Calculando prismas 3D (Topografía + Batimetría HD)...")
+print("   -> (Esto puede tardar varios minutos al ser alta resolución. Paciencia...)")
 
 # Proyecciones a metros
 easting_obs, northing_obs = proyeccion(lon, lat)
@@ -77,8 +83,8 @@ easting_2d, northing_2d = np.meshgrid(easting_1d, northing_1d)
 lon_utm, lat_utm = proyeccion(easting_2d, northing_2d, inverse=True)
 elevacion_utm = interpolador_h((lat_utm, lon_utm))
 
-# Configuración física
-rho_roca = 2670  # Densidad estándar
+# Configuración física (Oahu)
+rho_roca = 2670  
 rho_agua = 1030
 densidad_prismas = np.where(elevacion_utm >= 0, rho_roca, rho_agua - rho_roca)
 
@@ -99,16 +105,11 @@ efecto_topografico = capa_prismas.prism_layer.gravity(
 # =============================================================================
 print("4. Transformando a Bouguer Completa y generando mapa...")
 
-# Para pasar de Simple a Completa: 
-# 1. Recuperamos la Anomalía de Aire Libre teórica (Aire Libre = Simple + Slab)
 a_aire_libre_teorica = a_bouguer_simple + (0.04193 * (rho_roca/1000) * h_recuperada)
-
-# 2. Restamos el efecto de los prismas 3D reales
 a_bouguer_completa = a_aire_libre_teorica - efecto_topografico
 
-# Dibujamos el mapa con PyGMT
 fig = pygmt.Figure()
-fig.basemap(region=region, projection="M15c", frame=["af", 'WSen+t"Oahu: Bouguer Completa (de Digitalizado)"'])
+fig.basemap(region=region, projection="M15c", frame=["af", 'WSen+t"Oahu: Bouguer Completa"'])
 fig.coast(shorelines="0.5p,black", water="lightblue", land="lightgray", resolution="f")
 
 pygmt.makecpt(cmap="turbo", series=[a_bouguer_completa.min(), a_bouguer_completa.max()])
@@ -125,4 +126,4 @@ df_final = pd.DataFrame({
     "Bouguer_Completa": a_bouguer_completa
 })
 df_final.to_csv("Oahu_Resultados_Completos.csv", index=False)
-print("¡Proceso finalizado!")
+print("¡Proceso finalizado con éxito en Alta Resolución!")
