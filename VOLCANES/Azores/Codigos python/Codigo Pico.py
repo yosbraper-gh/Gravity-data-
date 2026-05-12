@@ -8,7 +8,6 @@ Created on Tue Apr 28 11:15:13 2026
 import pandas as pd
 import numpy as np
 import pyproj
-import ensaio
 import xarray as xr
 import harmonica as hm
 import pygmt
@@ -29,8 +28,6 @@ df = df.dropna(subset=['Longitud', 'Latitud', 'AB (mGal)'])
 lon_raw = df['Longitud'].values
 lat_raw = df['Latitud'].values
 
-# Si los números son gigantes (ej: -28493), significa que les falta la coma, así que dividimos.
-# Si ya son normales (ej: -28.493), los dejamos tal cual.
 if np.abs(np.nanmean(lon_raw)) > 1000:
     print(" -> Detectadas coordenadas sin decimales. Dividiendo por 1000...")
     lon = lon_raw / 1000.0
@@ -46,28 +43,27 @@ a_bouguer_simple = df['AB (mGal)'].values
 region = [-28.65, -28.05, 38.35, 38.65]
 proyeccion = pyproj.Proj(proj="utm", zone=26, ellps="WGS84")
 
-# CHIVATOS DE SEGURIDAD (Deben marcar cerca de Longitud -28.4 y Latitud 38.5)
 print(f" -> [DIAGNÓSTICO] Rango Longitud REAL: {lon.min():.3f} a {lon.max():.3f}")
 print(f" -> [DIAGNÓSTICO] Rango Latitud REAL: {lat.min():.3f} a {lat.max():.3f}")
 
 # =============================================================================
-# BLOQUE 2: RECUPERACIÓN DE ALTURAS (ENSAIO)
+# BLOQUE 2: RECUPERACIÓN DE ALTURAS (PyGMT Alta Resolución SRTM15+ / GEBCO)
 # =============================================================================
-print("2. Descargando topografía y rescatando alturas (h)...")
+print("2. Descargando topografía/batimetría de alta resolución (15s)...")
 
-archivo_topo = ensaio.fetch_earth_topography(version=1)
-topo_global = xr.load_dataarray(archivo_topo)
+# Ampliamos la región 0.5 grados para los efectos de borde
+region_extendida = [region[0] - 0.5, region[1] + 0.5, region[2] - 0.5, region[3] + 0.5]
 
-# Ordenamos el modelo para evitar errores internos de SciPy
-topo_global = topo_global.sortby('latitude').sortby('longitude')
-
-# Recorte del modelo alrededor de Pico
-topo = topo_global.sel(
-    longitude=slice(region[0] - 0.5, region[1] + 0.5),
-    latitude=slice(region[2] - 0.5, region[3] + 0.5)
+# Descargamos la topografía+batimetría integrada (usamos pixel para evitar el error IGPP)
+topo = pygmt.datasets.load_earth_relief(
+    resolution="15s", 
+    region=region_extendida,
+    registration="pixel"
 )
 
-topo_lon, topo_lat, topo_z = topo.longitude.values, topo.latitude.values, topo.values
+topo_lon = topo['lon'].values
+topo_lat = topo['lat'].values
+topo_z = topo.values
 
 # BLINDAJE: fill_value=0 asume que si algo cae fuera del mapa, está a nivel del mar.
 interpolador_h = RegularGridInterpolator(
@@ -80,7 +76,8 @@ print(f" -> [DIAGNÓSTICO] Altura (h) recuperada: {h_recuperada.min():.1f}m a {h
 # =============================================================================
 # BLOQUE 3: CÁLCULO DE LA CORRECCIÓN TOPOGRÁFICA 3D
 # =============================================================================
-print("3. Calculando prismas 3D (Topografía + Batimetría)...")
+print("3. Calculando prismas 3D (Topografía + Batimetría HD)...")
+print("   -> (Esto tardará un poco más al usar alta resolución. Paciencia...)")
 
 # Proyecciones a metros
 easting_obs, northing_obs = proyeccion(lon, lat)
@@ -115,18 +112,14 @@ efecto_topografico = capa_prismas.prism_layer.gravity(
 # =============================================================================
 print("4. Transformando a Bouguer Completa...")
 
-# 1. Recuperamos la Anomalía de Aire Libre teórica
 a_aire_libre_teorica = a_bouguer_simple + (0.04193 * (rho_roca/1000) * h_recuperada)
-
-# 2. Restamos el efecto de los prismas 3D reales
 a_bouguer_completa = a_aire_libre_teorica - efecto_topografico
 
 # =============================================================================
-# BLOQUE 5: FILTRO, ESTADÍSTICAS Y MAPAS
+# BLOQUE 5: FILTRO, ESTADÍSTICAS Y MAPAS UNIFICADOS
 # =============================================================================
-print("5. Analizando datos y generando mapas...")
+print("5. Analizando datos y generando mapas con escalas unificadas...")
 
-# Metemos todos los resultados en un DataFrame
 df_final = pd.DataFrame({
     "Lon_DD": lon, 
     "Lat_DD": lat, 
@@ -135,14 +128,7 @@ df_final = pd.DataFrame({
     "Bouguer_Completa": a_bouguer_completa
 })
 
-# --- EL CHIVATO FINAL ---
-print(f" -> MÍNIMO Bouguer Simple Original: {df_final['Bouguer_Simple'].min():.2f}")
-print(f" -> MÁXIMO Bouguer Simple Original: {df_final['Bouguer_Simple'].max():.2f}")
-print(f" -> MÍNIMO Bouguer Completa Calculada: {df_final['Bouguer_Completa'].min():.2f}")
-print(f" -> MÁXIMO Bouguer Completa Calculada: {df_final['Bouguer_Completa'].max():.2f}")
-
-# --- FILTRO ABIERTO DE SEGURIDAD ---
-# Borramos errores catastróficos que superen los 800 mGal o sean menores que 0
+# Filtro abierto de seguridad
 df_final = df_final[(df_final['Bouguer_Completa'] < 800) & (df_final['Bouguer_Completa'] > 0)]
 
 print(f" -> Puntos válidos listos para dibujar tras filtro: {len(df_final)}")
@@ -150,20 +136,26 @@ print(f" -> Puntos válidos listos para dibujar tras filtro: {len(df_final)}")
 if len(df_final) == 0:
     raise ValueError("¡Fallo crítico! El filtro ha borrado todo. Revisa los valores en consola.")
 
+# --- EL TRUCO: ESCALA UNIFICADA ---
+min_bouguer_global = min(df_final['Bouguer_Simple'].min(), df_final['Bouguer_Completa'].min())
+max_bouguer_global = max(df_final['Bouguer_Simple'].max(), df_final['Bouguer_Completa'].max())
+
+print(f" -> Escala de color fijada entre {min_bouguer_global:.1f} y {max_bouguer_global:.1f} mGal")
+
 # --- MAPA 1: BOUGUER SIMPLE ---
 fig1 = pygmt.Figure()
 fig1.basemap(region=region, projection="M15c", frame=["af", 'WSen+t"Pico: Bouguer Simple"'])
 fig1.coast(shorelines="0.5p,black", water="lightblue", land="lightgray", resolution="f")
-pygmt.makecpt(cmap="turbo", series=[df_final['Bouguer_Simple'].min(), df_final['Bouguer_Simple'].max()])
+pygmt.makecpt(cmap="turbo", series=[min_bouguer_global, max_bouguer_global])
 fig1.plot(x=df_final['Lon_DD'], y=df_final['Lat_DD'], style="c0.3c", fill=df_final['Bouguer_Simple'], cmap=True, pen="0.1p,black")
 fig1.colorbar(frame='af+l"mGal"', position="JBC+w10c+h")
 fig1.show()
 
 # --- MAPA 2: BOUGUER COMPLETA ---
 fig2 = pygmt.Figure()
-fig2.basemap(region=region, projection="M15c", frame=["af", 'WSen+t"Pico: Bouguer Completa (Calculada 3D)"'])
+fig2.basemap(region=region, projection="M15c", frame=["af", 'WSen+t"Pico: Bouguer Completa (HD 3D)"'])
 fig2.coast(shorelines="0.5p,black", water="lightblue", land="lightgray", resolution="f")
-pygmt.makecpt(cmap="turbo", series=[df_final['Bouguer_Completa'].min(), df_final['Bouguer_Completa'].max()])
+pygmt.makecpt(cmap="turbo", series=[min_bouguer_global, max_bouguer_global])
 fig2.plot(x=df_final['Lon_DD'], y=df_final['Lat_DD'], style="c0.3c", fill=df_final['Bouguer_Completa'], cmap=True, pen="0.1p,black")
 fig2.colorbar(frame='af+l"mGal"', position="JBC+w10c+h")
 fig2.show()
@@ -171,6 +163,6 @@ fig2.show()
 # =============================================================================
 # BLOQUE 6: EXPORTACIÓN
 # =============================================================================
-nombre_archivo = r"C:\Users\Usuario\Gravity-data-\VOLCANES\Azores\Tablas generadas\Tabla_Pico_ensaio.csv"
+nombre_archivo = r"C:\Users\Usuario\Gravity-data-\VOLCANES\Azores\Tablas generadas\Tabla_Pico_HD.csv"
 df_final.to_csv(nombre_archivo, index=False)
 print(f"¡Exportación finalizada en: {nombre_archivo}")

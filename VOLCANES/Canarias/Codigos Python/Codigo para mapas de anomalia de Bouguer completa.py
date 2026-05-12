@@ -4,27 +4,26 @@ Created on Mon Apr 27 11:20:11 2026
 
 @author: Usuario
 """
-
 import pandas as pd
 import numpy as np
 import pygmt
+import os
 
 # =============================================================================
 # BLOQUE 1: CARGAR DATOS DIGITALIZADOS
 # =============================================================================
-print("1. Cargando datos del mapa digitalizado...")
+print("1. Cargando datos del mapa digitalizado de La Gomera...")
 
-# Cambia esto por la ruta de tu nuevo archivo CSV
-ruta_csv = r"C:\Users\Usuario\Gravity-data-\VOLCANES\Azores\Faial\datos_completos_faial.csv"
+# Ajusta esta ruta si el nombre del archivo o carpeta varía ligeramente
+ruta_csv = r"C:\Users\Usuario\Gravity-data-\VOLCANES\Canarias\La_Gomera\Datos_La_Gomera_Finales.csv"
 df = pd.read_csv(ruta_csv)
 
-# ⚠️ ATENCIÓN AQUÍ: Cambia estos nombres por los nombres EXACTOS 
-# de las columnas que tengas en tu archivo Excel/CSV
-columna_lon = 'Longitud'     # (Asegúrate de que están en formato decimal, ej: -16.5)
-columna_lat = 'Latitud'      # (Formato decimal, ej: 28.2)
-columna_anomalia = 'AB (mGal)'
+# ⚠️ ATENCIÓN AQUÍ: Nombres de las columnas
+columna_lon = 'X'      # (Formato decimal)
+columna_lat = 'Y'      # (Formato decimal)
+columna_anomalia = 'Bouguer_mG'
 
-# Limpiamos filas vacías por si acaso el Excel tiene errores
+# Limpiamos filas vacías
 df = df.dropna(subset=[columna_lon, columna_lat, columna_anomalia])
 
 # Arrays base
@@ -32,8 +31,9 @@ lon = df[columna_lon].values
 lat = df[columna_lat].values
 a_bouguer_digi = df[columna_anomalia].values
 
-# Ajusta la región según la isla del mapa que hayas digitalizado
-region = [-14.50, -13.80, 28.00, 28.75] # Ejemplo: Fuerteventura
+# Ajuste de la región a LA GOMERA
+# Longitud Min, Longitud Max, Latitud Min, Latitud Max
+region = [-17.40, -17.00, 27.95, 28.25]
 
 # =============================================================================
 # BLOQUE 2: REPRESENTACIÓN DEL MAPA DIGITALIZADO CON PYGMT
@@ -42,18 +42,18 @@ print("2. Generando mapa comparativo...")
 
 fig = pygmt.Figure()
 
-# Configuramos el marco del mapa
-fig.basemap(region=region, projection="M15c", frame=["af", 'WSen+t"Mapa de Bouguer Digitalizado"'])
+# Configuramos el marco del mapa con el título de La Gomera
+fig.basemap(region=region, projection="M15c", frame=["af", 'WSen+t"Mapa de Bouguer Digitalizado - La Gomera"'])
 
 # Dibujamos costa y fondo
 fig.coast(shorelines="1/0.8p,black", land="lightgray", water="lightblue", resolution="f")
 
-# Creamos la escala de color ajustada a TUS DATOS digitalizados
+# Creamos la escala de color ajustada a los datos específicos de La Gomera
 vmin = float(np.nanmin(a_bouguer_digi))
 vmax = float(np.nanmax(a_bouguer_digi))
 pygmt.makecpt(cmap="turbo", series=[vmin, vmax], continuous=True)
 
-# Pintamos los puntos que has extraído del mapa
+# Pintamos los puntos extraídos del mapa
 fig.plot(x=lon, y=lat, style="c0.35c", fill=a_bouguer_digi, cmap=True, pen="0.1p,black")
 
 # Barra de color inferior
@@ -63,3 +63,16 @@ fig.colorbar(frame='af+l"Anomalia de Bouguer (mGal)"', position="JBC+w10c+h+o0/1
 fig.show()
 
 print("¡Mapa renderizado con éxito!")
+
+# =============================================================================
+# BLOQUE 3: EXPORTAR DATOS A CSV
+# =============================================================================
+print("3. Exportando datos procesados a un nuevo CSV...")
+
+# Definimos la ruta de salida para La Gomera en la carpeta de Tablas generadas
+ruta_salida = r"C:\Users\Usuario\Gravity-data-\Volcanes\Canarias\Tablas generadas\datos_la_gomera_procesados.csv"
+
+# Guardamos el DataFrame en el nuevo CSV
+df.to_csv(ruta_salida, index=False)
+
+print(f"¡Archivo guardado con éxito en: {ruta_salida}!")
