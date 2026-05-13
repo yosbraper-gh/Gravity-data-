@@ -99,6 +99,7 @@ El análisis preliminar permitió identificar múltiples anomalías gravimétric
 | Maio           | 1 | SI | Zona centro| Monte Penoso |
 | Reunión        | 1 | SI |  Zona centro y suoreste |Pico de Neiges y Dolomieu crater |
 
+En Terceira aunque se identifican 5 anomalías gravitatorias positivas no se las puede considerar como posibles complejos intrusivos pues la vaciariación de la anomalñia con respecto de las zonas circundantes en menor de 5mGal.
 
 ---
 
