@@ -90,7 +90,7 @@ El análisis preliminar permitió identificar múltiples anomalías gravimétric
 | Gran Canaria   | 1 | SI | Tejeda | Caldera de Tejeda |
 | Fuerteventura  | 1 | SI | Zoona central/oeste | Macizo de Betancuria |
 | Lanzarote      | 1 |NO | Arrecife | |
-| Pico           | 1 | NO | Topo Volcano – Pontas Negras | |
+| Pico           | 1 | SI | Pontas Negras | Topo Volcano  |
 | Faial          | 1 | NO | Zona nordeste | |
 | São Miguel     | 1 | SI | Zona Nordeste | Macizo volcánico |
 | Terceira       | 5 | NO | sur de la isla | |
