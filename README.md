@@ -95,7 +95,7 @@ El análisis preliminar permitió identificar múltiples anomalías gravimétric
 | São Miguel     | 1 | SI | Zona Nordeste | Macizo volcánico |
 | Terceira       | 5 | NO | sur de la isla | |
 | Oahu           | 2 | SI | | Cordilleras sureste y noroeste |
-| Big Island     | 2 | SI | Región volcánica central | Mauna Kea, Mauna Lea y Kilauea
+| Big Island     | 2 | SI | Región volcánica central | Mauna Kea, Mauna Lea, Kilauea, Haulalai y Kohala |
 | Maio           | 1 | SI | Zona centro| Monte Penoso |
 | Reunión        | 1 | SI |  Zona centro y suoreste |Pico de Neiges y Dolomieu crater |
 
